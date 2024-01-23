@@ -1,14 +1,14 @@
-import React, { useState } from 'react'
 import Image from 'next/image'
-import dropdown from '../assets/vector (29).png'
-import skill1 from '../assets/Vector (31).png'
-import skill2 from '../assets/Vector (15).png'
+import { useState } from 'react'
 import skill3 from '../assets/Group (1).png'
-import skill4 from '../assets/Vector (14).png'
-import skill5 from '../assets/vector (5).png'
+import skill1 from '../assets/Vector (31).png'
+import skill4 from '../assets/vector (14).png'
+import skill2 from '../assets/vector (15).png'
+import skill8 from '../assets/vector (26).png'
+import dropdown from '../assets/vector (29).png'
 import skill6 from '../assets/vector (3).png'
 import skill7 from '../assets/vector (30).png'
-import skill8 from '../assets/vector (26).png'
+import skill5 from '../assets/vector (5).png'
 import skill9 from '../assets/vector (8).png'
 import '../src/app/globals.css'
 
@@ -75,7 +75,7 @@ const DiscoverComponent = () => {
         <div className='w-full '>
             <section className="Discover-wrapper items-center w-full flex flex-col" style={{ backgroundColor: '#F8F8F9', padding: '2rem' }}>
                 <section className=' flex w-full items-center' style={{ textAlign: 'center', justifyContent: 'center' }}>
-                    <h1 className='font-bold mb-4 text-xl' style={{fontWeight: '500', color: '#333333', textAlign: 'center', width: '53%', letterSpacing: '1px' }}>
+                    <h1 className='font-bold mb-4 text-xl' style={{ fontWeight: '500', color: '#333333', textAlign: 'center', width: '53%', letterSpacing: '1px' }}>
                         DISCOVER OUR OFFERINGS TAILORED TO ENSURE A SMOOTH LAUNCH FOR YOUR PROJECT
                     </h1>
                 </section>
