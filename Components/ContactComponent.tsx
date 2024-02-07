@@ -1,7 +1,6 @@
-import React from 'react'
-import '../src/app/globals.css'
 import Image from 'next/image'
 import attach from '../assets/attach.png'
+import '../src/app/globals.css'
 
 const ContactComponent = () => {
     return (
@@ -26,14 +25,14 @@ const ContactComponent = () => {
                                 </section>
                                 <textarea className='m-4' placeholder='Tell us about your project*' style={{ borderRadius: '.3rem', border: '1px solid #998E8E', width: '300px', height: '120px', margin: '.5rem', padding: '.5rem' }} />
                             </div>
-                            <div className='p-4'style={{paddingTop: '0'}}>
+                            <div className='p-4' style={{ paddingTop: '0' }}>
                                 <section className='flex'>
                                     <input type="checkbox" />
-                                    <label style={{ fontSize: 'small',marginLeft: '.5rem', color: '#3333338F' }}>
+                                    <label style={{ fontSize: 'small', marginLeft: '.5rem', color: '#3333338F' }}>
                                         Request NDA
                                     </label>
                                 </section>
-                                <p style={{ fontSize: 'x-small',paddingTop: '1rem',color: '#3333338F'}}>
+                                <p style={{ fontSize: 'x-small', paddingTop: '1rem', color: '#3333338F' }}>
                                     By sending this form I confirm that I have read and accept Int+
                                     <a style={{ color: '#2D7EFF', marginLeft: '.5rem' }} href="https://www.sportybet.com/ng/m/">Privacy Policy</a>
                                 </p>
@@ -45,7 +44,7 @@ const ContactComponent = () => {
                     </section>
                     <section className="contact-text" style={{ color: 'white', width: '44%', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
                         <h1 style={{ fontSize: '20px', fontWeight: '500', marginBottom: '1rem' }}>
-                            WHAT'S NEXT?
+                            WHAT&apos;S NEXT?
                         </h1>
                         <ul className='contact-list'>
                             <li style={{ listStyle: 'outside' }}>

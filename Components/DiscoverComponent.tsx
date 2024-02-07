@@ -1,15 +1,15 @@
-import React, { useState } from 'react'
 import Image from 'next/image'
-import dropdown from '../assets/vector (29).png'
+import { useState } from 'react'
 import skill1 from '../assets/Group 104.svg'
 import skill2 from '../assets/Group 105.svg'
-import skill3 from '../assets/Group 60.svg'
-import skill4 from '../assets/Group 59.svg'
-import skill5 from '../assets/Group 58.svg'
-import skill6 from '../assets/Group 57.svg'
-import skill7 from '../assets/Group 55.svg'
 import skill8 from '../assets/Group 54.svg'
+import skill7 from '../assets/Group 55.svg'
 import skill9 from '../assets/Group 56.svg'
+import skill6 from '../assets/Group 57.svg'
+import skill5 from '../assets/Group 58.svg'
+import skill4 from '../assets/Group 59.svg'
+import skill3 from '../assets/Group 60.svg'
+import dropdown from '../assets/vector (29).png'
 import '../src/app/globals.css'
 
 const DiscoverComponent = () => {
@@ -75,14 +75,14 @@ const DiscoverComponent = () => {
         <div className='w-full '>
             <section className="Discover-wrapper items-center w-full flex flex-col" style={{ backgroundColor: '#F8F8F9', padding: '2rem' }}>
                 <section className=' flex w-full items-center' style={{ textAlign: 'center', justifyContent: 'center' }}>
-                    <h1 className='font-bold mb-4 text-xl' style={{fontWeight: '500', color: '#333333', textAlign: 'center', width: '53%', letterSpacing: '1px' }}>
+                    <h1 className='font-bold mb-4 text-xl' style={{ fontWeight: '500', color: '#333333', textAlign: 'center', width: '53%', letterSpacing: '1px' }}>
                         DISCOVER OUR OFFERINGS TAILORED TO ENSURE A SMOOTH LAUNCH FOR YOUR PROJECT
                     </h1>
                 </section>
                 <div className="skill-wrapper flex flex-col">
                     <div className='flex' style={{ marginTop: '.5rem', marginBottom: '.5rem', width: '94%', justifyContent: 'space-between', alignItems: 'center' }}>
                         <div className="skill-logo flex items-center">
-                                <Image style={{ top: '10px', left: '5px', width: '23%' }} className='h-fit' src={skill1} alt='' />
+                            <Image style={{ top: '10px', left: '5px', width: '23%' }} className='h-fit' src={skill1} alt='' />
                             <h1 style={{ marginLeft: '1rem', fontWeight: '600', color: '#333333' }}>
                                 Web development
                             </h1>
@@ -112,7 +112,7 @@ const DiscoverComponent = () => {
                 <div className="skill-wrapper flex flex-col">
                     <div className='flex' style={{ marginTop: '.5rem', marginBottom: '.5rem', width: '94%', justifyContent: 'space-between', alignItems: 'center' }}>
                         <div className="skill-logo flex items-center">
-                                <Image style={{ top: '4px', left: '10px', width: '19%' }} className='h-fit' src={skill2} alt='' />
+                            <Image style={{ top: '4px', left: '10px', width: '19%' }} className='h-fit' src={skill2} alt='' />
 
                             <h1 style={{ marginLeft: '1rem', fontWeight: '600', color: '#333333' }}>
                                 Mobile App Development
@@ -148,7 +148,7 @@ const DiscoverComponent = () => {
                 <div className="skill-wrapper flex flex-col">
                     <div className='flex' style={{ marginTop: '.5rem', marginBottom: '.5rem', width: '94%', justifyContent: 'space-between', alignItems: 'center' }}>
                         <div className="skill-logo flex items-center">
-                                <Image style={{ top: '7px', left: '7px', width: '15%' }} className='h-fit' src={skill3} alt='' />
+                            <Image style={{ top: '7px', left: '7px', width: '15%' }} className='h-fit' src={skill3} alt='' />
                             <h1 style={{ marginLeft: '1rem', fontWeight: '600', color: '#333333' }}>
                                 MVP for Startups and Enterprises
                             </h1>
@@ -174,7 +174,7 @@ const DiscoverComponent = () => {
                 <div className="skill-wrapper flex flex-col">
                     <div className='flex' style={{ marginTop: '.5rem', marginBottom: '.5rem', width: '94%', justifyContent: 'space-between', alignItems: 'center' }}>
                         <div className="skill-logo flex items-center">
-                                <Image style={{ top: '4px', left: '6px', width: '16%' }} className='h-fit' src={skill4} alt='' />
+                            <Image style={{ top: '4px', left: '6px', width: '16%' }} className='h-fit' src={skill4} alt='' />
                             <h1 style={{ marginLeft: '1rem', fontWeight: '600', color: '#333333' }}>
                                 Dedicated Development Teams
                             </h1>
@@ -187,7 +187,7 @@ const DiscoverComponent = () => {
                         <section className="skill-details flex-col flex" style={{ padding: '1rem', backgroundColor: 'rgb(248, 248, 249)', transition: 'all ease-in-out' }} >
                             <p>
                                 Accelerate your time-to-market and cut hiring costs significantly. Our pool of talented professionals provides rapid, high-quality development services on demand.
-                                Whether you need to outsource entire projects or bolster your existing team with our skilled engineers, we've got you covered.
+                                Whether you need to outsource entire projects or bolster your existing team with our skilled engineers, we&apos;ve got you covered.
                             </p>
                             <ul className='flex' style={{ padding: '1.3rem', width: '85%', justifyContent: 'space-between' }}>
                                 <li style={{ listStyle: 'outside' }}>
@@ -200,7 +200,7 @@ const DiscoverComponent = () => {
                 <div className="skill-wrapper flex flex-col">
                     <div className='flex' style={{ marginTop: '.5rem', marginBottom: '.5rem', width: '94%', justifyContent: 'space-between', alignItems: 'center' }}>
                         <div className="skill-logo flex items-center">
-                                <Image style={{ top: '7px', left: '8px', width: '15%' }} className='h-fit' src={skill5} alt='' />
+                            <Image style={{ top: '7px', left: '8px', width: '15%' }} className='h-fit' src={skill5} alt='' />
                             <h1 style={{ marginLeft: '1rem', fontWeight: '600', color: '#333333' }}>
                                 Enterprise Software Development
                             </h1>
@@ -226,7 +226,7 @@ const DiscoverComponent = () => {
                 <div className="skill-wrapper flex flex-col">
                     <div className='flex' style={{ marginTop: '.5rem', marginBottom: '.5rem', width: '94%', justifyContent: 'space-between', alignItems: 'center' }}>
                         <div className="skill-logo flex items-center">
-                                <Image style={{ top: '10px', left: '5px', width: '13%' }} className='h-fit' src={skill6} alt='' />
+                            <Image style={{ top: '10px', left: '5px', width: '13%' }} className='h-fit' src={skill6} alt='' />
                             <h1 style={{ marginLeft: '1rem', fontWeight: '600', color: '#333333' }}>
                                 Enterprise Software Development Services
                             </h1>
@@ -238,7 +238,7 @@ const DiscoverComponent = () => {
                     {detail5 && (
                         <section className="skill-details flex-col flex" style={{ padding: '1rem', backgroundColor: 'rgb(248, 248, 249)', transition: 'all ease-in-out' }} >
                             <p>
-                                Streamline your operations and expedite achieving business objectives through Int+'s digital transformation approach.
+                                Streamline your operations and expedite achieving business objectives through Int+&apos;s digital transformation approach.
                                 Our strategic IT consulting enhances your software architecture, focusing on designing performance-driven tech innovations.
                             </p>
                             <ul className='flex' style={{ padding: '1.3rem', width: '85%', justifyContent: 'space-between' }}>
@@ -252,7 +252,7 @@ const DiscoverComponent = () => {
                 <div className="skill-wrapper flex flex-col">
                     <div className='flex' style={{ marginTop: '.5rem', marginBottom: '.5rem', width: '94%', justifyContent: 'space-between', alignItems: 'center' }}>
                         <div className="skill-logo flex items-center">
-                                <Image style={{ top: '10px', left: '5px', width: '28%' }} className='h-fit' src={skill7} alt='' />
+                            <Image style={{ top: '10px', left: '5px', width: '28%' }} className='h-fit' src={skill7} alt='' />
                             <h1 style={{ marginLeft: '1rem', fontWeight: '600', color: '#333333' }}>
                                 UI/UX Design
                             </h1>
@@ -277,7 +277,7 @@ const DiscoverComponent = () => {
                 <div className="skill-wrapper flex flex-col">
                     <div className='flex' style={{ marginTop: '.5rem', marginBottom: '.5rem', width: '94%', justifyContent: 'space-between', alignItems: 'center' }}>
                         <div className="skill-logo flex items-center">
-                                <Image style={{ top: '6px', left: '7px', width: '28%' }} className='h-fit' src={skill8} alt='' />
+                            <Image style={{ top: '6px', left: '7px', width: '28%' }} className='h-fit' src={skill8} alt='' />
                             <h1 style={{ marginLeft: '1rem', fontWeight: '600', color: '#333333' }}>
                                 QA & Testing
                             </h1>
@@ -303,7 +303,7 @@ const DiscoverComponent = () => {
                 <div className="skill-wrapper flex flex-col">
                     <div className='flex' style={{ marginTop: '.5rem', marginBottom: '.5rem', width: '94%', justifyContent: 'space-between', alignItems: 'center' }}>
                         <div className="skill-logo flex items-center">
-                                <Image style={{ top: '5px', left: '5px', width: '16%' }} className='h-fit' src={skill9} alt='' />
+                            <Image style={{ top: '5px', left: '5px', width: '16%' }} className='h-fit' src={skill9} alt='' />
                             <h1 style={{ marginLeft: '1rem', fontWeight: '600', color: '#333333' }}>
                                 Software Architecture Solutions
                             </h1>
@@ -315,7 +315,7 @@ const DiscoverComponent = () => {
                     {detail8 && (
                         <section className="skill-details flex-col flex" style={{ padding: '1rem', backgroundColor: 'rgb(248, 248, 249)', transition: 'all ease-in-out' }} >
                             <p>
-                                Our tech leads specialize in designing software architecture that ensures your product's maintainability, interoperability, security, and stable performance.
+                                Our tech leads specialize in designing software architecture that ensures your product&apos;s maintainability, interoperability, security, and stable performance.
                             </p>
                             <ul className='flex' style={{ padding: '1.3rem', width: '85%', justifyContent: 'space-between' }}>
                                 <li style={{ listStyle: 'outside' }}>
