@@ -1,14 +1,14 @@
 import React from 'react'
 import Image from 'next/image'
-import skill from '../assets/game-icons_puzzle.png'
-import skill1 from '../assets/settings-gear-svgrepo-com 1.png'
-import skill2 from '../assets/vector (16).png'
-import skill3 from '../assets/vector (4).png'
-import skill4 from '../assets/vector (8).png'
-import skill5 from '../assets/vector (28).png'
-import skill6 from '../assets/vector (11).png'
-import skill7 from '../assets/vector (10).png'
-import skill8 from '../assets/vector (30).png'
+import skill from '../assets/Group 106.svg'
+import skill1 from '../assets/Group 109.svg'
+import skill2 from '../assets/Group 110.svg'
+import skill3 from '../assets/Group 107.svg'
+import skill4 from '../assets/Group 16.svg'
+import skill5 from '../assets/Group 62.svg'
+import skill6 from '../assets/Group 108.svg'
+import skill7 from '../assets/Group 64.svg'
+import skill8 from '../assets/Group 55.svg'
 
 
 const SolutionComponent = () => {
@@ -22,9 +22,7 @@ const SolutionComponent = () => {
                     <div className="card-wrapper">
                         <div className="card-details flex flex-col p-4" style={{ borderRadius: '.5rem', backgroundColor: 'white' }}>
                             <div className="skill-logo flex flex-col">
-                                <div className='relative' style={{ borderRadius: '50%', padding: '1.3rem', border: '1px solid blue', width: '4%' }}>
-                                    <Image style={{ top: '7px', left: '7px', width: '66%' }} className='h-fit absolute top-[50%]' src={skill} alt='' />
-                                </div>
+                                    <Image style={{ top: '7px', left: '7px', width: '20%' }} className='h-fit' src={skill} alt='' />
                                 <h1 style={{ fontWeight: '600', color: '#333333', paddingTop: '1rem', paddingBottom: '1rem' }}>
                                     Discovery Projects
                                 </h1>
@@ -38,14 +36,12 @@ const SolutionComponent = () => {
                     <div className="card-wrapper">
                         <div className="card-details flex flex-col p-4" style={{ borderRadius: '.5rem', backgroundColor: 'white' }}>
                             <div className="skill-logo flex flex-col">
-                                <div className='relative' style={{ borderRadius: '50%', padding: '1.3rem', border: '1px solid blue', width: '4%' }}>
-                                    <Image style={{ top: '7px', left: '7px', width: '66%' ,transform: 'rotate(90deg)' }} className='h-fit absolute top-[50%]' src={skill1} alt='' />
-                                </div>
-                                <h1 style={{ fontWeight: '600', color: '#333333', paddingTop: '1rem', paddingBottom: '1rem' }}>
+                                    <Image style={{ top: '7px', left: '7px', width: '20%' ,transform: 'rotate(90deg)' }} className='h-fit' src={skill1} alt='' />
+                                <h1 style={{fontWeight: '600', color: '#333333', paddingTop: '1rem', paddingBottom: '1rem' }}>
                                     PoC/MVP Services
                                 </h1>
                             </div>
-                            <p style={{ width: '100%', fontSize: 'smaller' }}>
+                            <p style={{width: '100%', fontSize: 'smaller' }}>
                                 Prototype to either identify shortcomings swiftly or enhance and fortify your concept.
                                 Deliver a product version to gather feedback from early adopters, laying the groundwork for a comprehensive rollout.
                             </p>
@@ -53,15 +49,13 @@ const SolutionComponent = () => {
                     </div>
                     <div className="card-wrapper">
                         <div className="card-details flex flex-col p-4" style={{ borderRadius: '.5rem', backgroundColor: 'white' }}>
-                            <div className="skill-logo flex flex-col">
-                                <div className='relative' style={{ borderRadius: '50%', padding: '1.3rem', border: '1px solid blue', width: '4%' }}>
-                                    <Image style={{ top: '7px', left: '7px', width: '66%' }} className='h-fit absolute top-[50%]' src={skill2} alt='' />
-                                </div>
+                            <div className="skill-logo flex flex-col">  
+                                    <Image style={{ top: '7px', left: '7px', width: '20%' }} className='h-fit' src={skill2} alt='' />
                                 <h1 style={{ fontWeight: '600', color: '#333333', paddingTop: '1rem', paddingBottom: '1rem' }}>
                                     Business Process Automation
                                 </h1>
                             </div>
-                            <p style={{ width: '100%', fontSize: 'smaller' }}>
+                            <p style={{width: '100%', fontSize: 'smaller' }}>
                                 Implement automation throughout the value chain to streamline repetitive and labor-intensive tasks.
                                 This enhances overall performance, improves the experience for internal users, and enables scalable operations.
                             </p>
@@ -70,9 +64,7 @@ const SolutionComponent = () => {
                     <div className="card-wrapper">
                         <div className="card-details flex flex-col p-4" style={{ borderRadius: '.5rem', backgroundColor: 'white' }}>
                             <div className="skill-logo flex flex-col">
-                                <div className='relative' style={{ borderRadius: '50%', padding: '1.3rem', border: '1px solid blue', width: '4%' }}>
-                                    <Image style={{ top: '7px', left: '7px', width: '66%' }} className='h-fit absolute top-[50%]' src={skill3} alt='' />
-                                </div>
+                                    <Image style={{ top: '7px', left: '7px', width: '20%' }} className='h-fit' src={skill3} alt='' />
                                 <h1 style={{ fontWeight: '600', color: '#333333', paddingTop: '1rem', paddingBottom: '1rem' }}>
                                     End-to-End System Integration
                                 </h1>
@@ -86,10 +78,8 @@ const SolutionComponent = () => {
                     <div className="card-wrapper">
                         <div className="card-details flex flex-col p-4" style={{ borderRadius: '.5rem', backgroundColor: 'white' }}>
                             <div className="skill-logo flex flex-col">
-                                <div className='relative' style={{ borderRadius: '50%', padding: '1.3rem', border: '1px solid blue', width: '4%' }}>
-                                    <Image style={{ top: '7px', left: '7px', width: '66%' }} className='h-fit absolute top-[50%]' src={skill4} alt='' />
-                                </div>
-                                <h1 style={{ fontWeight: '600', color: '#333333', paddingTop: '1rem', paddingBottom: '1rem' }}>
+                                    <Image style={{ top: '7px', left: '7px', width: '20%' }} className='h-fit' src={skill4} alt='' />
+                                <h1 style={{fontWeight: '600', color: '#333333', paddingTop: '1rem', paddingBottom: '1rem' }}>
                                     Cloud Solutions
                                 </h1>
                             </div>
@@ -101,9 +91,7 @@ const SolutionComponent = () => {
                     <div className="card-wrapper">
                         <div className="card-details flex flex-col p-4" style={{ borderRadius: '.5rem', backgroundColor: 'white' }}>
                             <div className="skill-logo flex flex-col">
-                                <div className='relative' style={{ borderRadius: '50%', padding: '1.3rem', border: '1px solid blue', width: '4%' }}>
-                                    <Image style={{ top: '7px', left: '7px', width: '66%' }} className='h-fit absolute top-[50%]' src={skill5} alt='' />
-                                </div>
+                                    <Image style={{ top: '7px', left: '7px', width: '20%' }} className='h-fit' src={skill5} alt='' />
                                 <h1 style={{ fontWeight: '600', color: '#333333', paddingTop: '1rem', paddingBottom: '1rem' }}>
                                     Product Oriented Delivery (POD)
                                 </h1>
@@ -116,9 +104,8 @@ const SolutionComponent = () => {
                     <div className="card-wrapper">
                         <div className="card-details flex flex-col p-4" style={{ borderRadius: '.5rem', backgroundColor: 'white' }}>
                             <div className="skill-logo flex flex-col">
-                                <div className='relative' style={{ borderRadius: '50%', padding: '1.3rem', border: '1px solid blue', width: '4%' }}>
-                                    <Image style={{ top: '7px', left: '7px', width: '66%' }} className='h-fit absolute top-[50%]' src={skill6} alt='' />
-                                </div>
+                               
+                                    <Image style={{ top: '7px', left: '7px', width: '20%' }} className='h-fit' src={skill6} alt='' />
                                 <h1 style={{ fontWeight: '600', color: '#333333', paddingTop: '1rem', paddingBottom: '1rem' }}>
                                     Master Data Management
                                 </h1>
@@ -132,9 +119,7 @@ const SolutionComponent = () => {
                     <div className="card-wrapper">
                         <div className="card-details flex flex-col p-4" style={{ borderRadius: '.5rem', backgroundColor: 'white' }}>
                             <div className="skill-logo flex flex-col">
-                                <div className='relative' style={{ borderRadius: '50%', padding: '1.3rem', border: '1px solid blue', width: '4%' }}>
-                                    <Image style={{ top: '7px', left: '7px', width: '66%' }} className='h-fit absolute top-[50%]' src={skill7} alt='' />
-                                </div>
+                                    <Image style={{ top: '7px', left: '7px', width: '20%' }} className='h-fit' src={skill7} alt='' />
                                 <h1 style={{ fontWeight: '600', color: '#333333', paddingTop: '1rem', paddingBottom: '1rem' }}>
                                     Executive and Operational Dashboards
                                 </h1>
@@ -146,10 +131,8 @@ const SolutionComponent = () => {
                     </div>
                     <div className="card-wrapper">
                         <div className="card-details flex flex-col p-4" style={{ borderRadius: '.5rem', backgroundColor: 'white' }}>
-                            <div className="skill-logo flex flex-col">
-                                <div className='relative' style={{ borderRadius: '50%', padding: '1.3rem', border: '1px solid blue', width: '4%' }}>
-                                    <Image style={{ top: '11px', left: '7px', width: '66%' }} className='h-fit absolute top-[50%]' src={skill8} alt='' />
-                                </div>
+                            <div className="skill-logo flex flex-col"> 
+                                    <Image style={{ top: '11px', left: '7px', width: '20%' }} className='h-fit' src={skill8} alt='' />
                                 <h1 style={{ fontWeight: '600', color: '#333333', paddingTop: '1rem', paddingBottom: '1rem' }}>
                                     UI/UX Design
                                 </h1>

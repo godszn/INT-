@@ -1,15 +1,15 @@
+import React, { useState } from 'react'
 import Image from 'next/image'
-import { useState } from 'react'
-import skill3 from '../assets/Group (1).png'
-import skill1 from '../assets/Vector (31).png'
-import skill4 from '../assets/vector (14).png'
-import skill2 from '../assets/vector (15).png'
-import skill8 from '../assets/vector (26).png'
 import dropdown from '../assets/vector (29).png'
-import skill6 from '../assets/vector (3).png'
-import skill7 from '../assets/vector (30).png'
-import skill5 from '../assets/vector (5).png'
-import skill9 from '../assets/vector (8).png'
+import skill1 from '../assets/Group 104.svg'
+import skill2 from '../assets/Group 105.svg'
+import skill3 from '../assets/Group 60.svg'
+import skill4 from '../assets/Group 59.svg'
+import skill5 from '../assets/Group 58.svg'
+import skill6 from '../assets/Group 57.svg'
+import skill7 from '../assets/Group 55.svg'
+import skill8 from '../assets/Group 54.svg'
+import skill9 from '../assets/Group 56.svg'
 import '../src/app/globals.css'
 
 const DiscoverComponent = () => {
@@ -75,16 +75,14 @@ const DiscoverComponent = () => {
         <div className='w-full '>
             <section className="Discover-wrapper items-center w-full flex flex-col" style={{ backgroundColor: '#F8F8F9', padding: '2rem' }}>
                 <section className=' flex w-full items-center' style={{ textAlign: 'center', justifyContent: 'center' }}>
-                    <h1 className='font-bold mb-4 text-xl' style={{ fontWeight: '500', color: '#333333', textAlign: 'center', width: '53%', letterSpacing: '1px' }}>
+                    <h1 className='font-bold mb-4 text-xl' style={{fontWeight: '500', color: '#333333', textAlign: 'center', width: '53%', letterSpacing: '1px' }}>
                         DISCOVER OUR OFFERINGS TAILORED TO ENSURE A SMOOTH LAUNCH FOR YOUR PROJECT
                     </h1>
                 </section>
                 <div className="skill-wrapper flex flex-col">
                     <div className='flex' style={{ marginTop: '.5rem', marginBottom: '.5rem', width: '94%', justifyContent: 'space-between', alignItems: 'center' }}>
                         <div className="skill-logo flex items-center">
-                            <div className='relative' style={{ borderRadius: '50%', padding: '1.3rem', border: '1px solid blue' }}>
-                                <Image style={{ top: '10px', left: '5px', width: '75%' }} className='h-fit absolute top-[50%]' src={skill1} alt='' />
-                            </div>
+                                <Image style={{ top: '10px', left: '5px', width: '23%' }} className='h-fit' src={skill1} alt='' />
                             <h1 style={{ marginLeft: '1rem', fontWeight: '600', color: '#333333' }}>
                                 Web development
                             </h1>
@@ -114,9 +112,8 @@ const DiscoverComponent = () => {
                 <div className="skill-wrapper flex flex-col">
                     <div className='flex' style={{ marginTop: '.5rem', marginBottom: '.5rem', width: '94%', justifyContent: 'space-between', alignItems: 'center' }}>
                         <div className="skill-logo flex items-center">
-                            <div className='relative' style={{ borderRadius: '50%', padding: '1.3rem', border: '1px solid blue' }}>
-                                <Image style={{ top: '4px', left: '10px', width: '68%' }} className='h-fit absolute top-[50%]' src={skill2} alt='' />
-                            </div>
+                                <Image style={{ top: '4px', left: '10px', width: '19%' }} className='h-fit' src={skill2} alt='' />
+
                             <h1 style={{ marginLeft: '1rem', fontWeight: '600', color: '#333333' }}>
                                 Mobile App Development
                             </h1>
@@ -151,9 +148,7 @@ const DiscoverComponent = () => {
                 <div className="skill-wrapper flex flex-col">
                     <div className='flex' style={{ marginTop: '.5rem', marginBottom: '.5rem', width: '94%', justifyContent: 'space-between', alignItems: 'center' }}>
                         <div className="skill-logo flex items-center">
-                            <div className='relative' style={{ borderRadius: '50%', padding: '1.3rem', border: '1px solid blue' }}>
-                                <Image style={{ top: '7px', left: '7px', width: '75%' }} className='h-fit absolute top-[50%]' src={skill3} alt='' />
-                            </div>
+                                <Image style={{ top: '7px', left: '7px', width: '15%' }} className='h-fit' src={skill3} alt='' />
                             <h1 style={{ marginLeft: '1rem', fontWeight: '600', color: '#333333' }}>
                                 MVP for Startups and Enterprises
                             </h1>
@@ -179,9 +174,7 @@ const DiscoverComponent = () => {
                 <div className="skill-wrapper flex flex-col">
                     <div className='flex' style={{ marginTop: '.5rem', marginBottom: '.5rem', width: '94%', justifyContent: 'space-between', alignItems: 'center' }}>
                         <div className="skill-logo flex items-center">
-                            <div className='relative' style={{ borderRadius: '50%', padding: '1.3rem', border: '1px solid blue' }}>
-                                <Image style={{ top: '4px', left: '6px', width: '75%' }} className='h-fit absolute top-[50%]' src={skill4} alt='' />
-                            </div>
+                                <Image style={{ top: '4px', left: '6px', width: '16%' }} className='h-fit' src={skill4} alt='' />
                             <h1 style={{ marginLeft: '1rem', fontWeight: '600', color: '#333333' }}>
                                 Dedicated Development Teams
                             </h1>
@@ -207,9 +200,7 @@ const DiscoverComponent = () => {
                 <div className="skill-wrapper flex flex-col">
                     <div className='flex' style={{ marginTop: '.5rem', marginBottom: '.5rem', width: '94%', justifyContent: 'space-between', alignItems: 'center' }}>
                         <div className="skill-logo flex items-center">
-                            <div className='relative' style={{ borderRadius: '50%', padding: '1.3rem', border: '1px solid blue' }}>
-                                <Image style={{ top: '7px', left: '8px', width: '70%' }} className='h-fit absolute top-[50%]' src={skill5} alt='' />
-                            </div>
+                                <Image style={{ top: '7px', left: '8px', width: '15%' }} className='h-fit' src={skill5} alt='' />
                             <h1 style={{ marginLeft: '1rem', fontWeight: '600', color: '#333333' }}>
                                 Enterprise Software Development
                             </h1>
@@ -235,9 +226,7 @@ const DiscoverComponent = () => {
                 <div className="skill-wrapper flex flex-col">
                     <div className='flex' style={{ marginTop: '.5rem', marginBottom: '.5rem', width: '94%', justifyContent: 'space-between', alignItems: 'center' }}>
                         <div className="skill-logo flex items-center">
-                            <div className='relative' style={{ borderRadius: '50%', padding: '1.3rem', border: '1px solid blue' }}>
-                                <Image style={{ top: '10px', left: '5px', width: '75%' }} className='h-fit absolute top-[50%]' src={skill6} alt='' />
-                            </div>
+                                <Image style={{ top: '10px', left: '5px', width: '13%' }} className='h-fit' src={skill6} alt='' />
                             <h1 style={{ marginLeft: '1rem', fontWeight: '600', color: '#333333' }}>
                                 Enterprise Software Development Services
                             </h1>
@@ -263,9 +252,7 @@ const DiscoverComponent = () => {
                 <div className="skill-wrapper flex flex-col">
                     <div className='flex' style={{ marginTop: '.5rem', marginBottom: '.5rem', width: '94%', justifyContent: 'space-between', alignItems: 'center' }}>
                         <div className="skill-logo flex items-center">
-                            <div className='relative' style={{ borderRadius: '50%', padding: '1.3rem', border: '1px solid blue' }}>
-                                <Image style={{ top: '10px', left: '5px', width: '75%' }} className='h-fit absolute top-[50%]' src={skill7} alt='' />
-                            </div>
+                                <Image style={{ top: '10px', left: '5px', width: '28%' }} className='h-fit' src={skill7} alt='' />
                             <h1 style={{ marginLeft: '1rem', fontWeight: '600', color: '#333333' }}>
                                 UI/UX Design
                             </h1>
@@ -290,9 +277,7 @@ const DiscoverComponent = () => {
                 <div className="skill-wrapper flex flex-col">
                     <div className='flex' style={{ marginTop: '.5rem', marginBottom: '.5rem', width: '94%', justifyContent: 'space-between', alignItems: 'center' }}>
                         <div className="skill-logo flex items-center">
-                            <div className='relative' style={{ borderRadius: '50%', padding: '1.3rem', border: '1px solid blue' }}>
-                                <Image style={{ top: '6px', left: '7px', width: '65%' }} className='h-fit absolute top-[50%]' src={skill8} alt='' />
-                            </div>
+                                <Image style={{ top: '6px', left: '7px', width: '28%' }} className='h-fit' src={skill8} alt='' />
                             <h1 style={{ marginLeft: '1rem', fontWeight: '600', color: '#333333' }}>
                                 QA & Testing
                             </h1>
@@ -318,9 +303,7 @@ const DiscoverComponent = () => {
                 <div className="skill-wrapper flex flex-col">
                     <div className='flex' style={{ marginTop: '.5rem', marginBottom: '.5rem', width: '94%', justifyContent: 'space-between', alignItems: 'center' }}>
                         <div className="skill-logo flex items-center">
-                            <div className='relative' style={{ borderRadius: '50%', padding: '1.3rem', border: '1px solid blue' }}>
-                                <Image style={{ top: '5px', left: '5px', width: '75%' }} className='h-fit absolute top-[50%]' src={skill9} alt='' />
-                            </div>
+                                <Image style={{ top: '5px', left: '5px', width: '16%' }} className='h-fit' src={skill9} alt='' />
                             <h1 style={{ marginLeft: '1rem', fontWeight: '600', color: '#333333' }}>
                                 Software Architecture Solutions
                             </h1>
