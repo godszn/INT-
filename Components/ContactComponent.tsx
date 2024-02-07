@@ -13,18 +13,18 @@ const ContactComponent = () => {
                             CONTACT US
                         </h1>
                         <div className="contact-input flex flex-col">
-                            <input className='m-4' placeholder='Name' style={{ borderRadius: '.3rem', border: '1px solid #998E8E', width: '300px', margin: '1rem', padding: '.5rem' }} />
-                            <input className='m-4' placeholder='Business Email*' style={{ borderRadius: '.3rem', border: '1px solid #998E8E', width: '300px', margin: '1rem', padding: '.5rem' }} />
-                            <input className='m-4' placeholder='Alternative Email*' style={{ borderRadius: '.3rem', border: '1px solid #998E8E', width: '300px', margin: '1rem', padding: '.5rem' }} />
-                            <input className='m-4' placeholder='+234   |' style={{ borderRadius: '.3rem', border: '1px solid #998E8E', width: '300px', margin: '1rem', padding: '.5rem' }} />
+                            <input className='m-4' placeholder='Name' style={{ borderRadius: '.3rem', border: '1px solid #998E8E', width: '300px', margin: '.5rem', padding: '.5rem' }} />
+                            <input className='m-4' placeholder='Business Email*' style={{ borderRadius: '.3rem', border: '1px solid #998E8E', width: '300px', margin: '.5rem', padding: '.5rem' }} />
+                            <input className='m-4' placeholder='Alternative Email*' style={{ borderRadius: '.3rem', border: '1px solid #998E8E', width: '300px', margin: '.5rem', padding: '.5rem' }} />
+                            <input className='m-4' placeholder='+234   |' style={{ borderRadius: '.3rem', border: '1px solid #998E8E', width: '300px', margin: '.5rem', padding: '.5rem' }} />
                             <div className='relative'>
                                 <section className='flex' style={{ position: 'absolute', bottom: '25px', right: '23px' }}>
                                     <Image alt='' className='h-fit' style={{ width: '17%' }} src={attach} />
-                                    <p style={{ color: '#3333338F', fontSize: 'small' }}>
+                                    <p style={{ color: '#3333338F', fontSize: 'x-small' }}>
                                         Attach files
                                     </p>
                                 </section>
-                                <textarea className='m-4' placeholder='Tell us about your project*' style={{ borderRadius: '.3rem', border: '1px solid #998E8E', width: '300px', height: '120px', margin: '1rem', padding: '.5rem' }} />
+                                <textarea className='m-4' placeholder='Tell us about your project*' style={{ borderRadius: '.3rem', border: '1px solid #998E8E', width: '300px', height: '120px', margin: '.5rem', padding: '.5rem' }} />
                             </div>
                             <div className='p-4'style={{paddingTop: '0'}}>
                                 <section className='flex'>
@@ -33,7 +33,7 @@ const ContactComponent = () => {
                                         Request NDA
                                     </label>
                                 </section>
-                                <p style={{ fontSize: 'small',color: '#3333338F'}}>
+                                <p style={{ fontSize: 'x-small',paddingTop: '1rem',color: '#3333338F'}}>
                                     By sending this form I confirm that I have read and accept Int+
                                     <a style={{ color: '#2D7EFF', marginLeft: '.5rem' }} href="https://www.sportybet.com/ng/m/">Privacy Policy</a>
                                 </p>

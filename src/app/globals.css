@@ -6,6 +6,7 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --swiper-navigation-size: 30px !important;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -133,7 +134,7 @@ font-size: small;
   display: flex;
     padding-left: 8rem;
     padding-right: 8rem;
-    gap: 10rem;
+    gap: 9rem;
 }
 
 .service-footer p{
@@ -144,7 +145,7 @@ font-size: small;
 .industry-footer p{
   margin-top: .5rem;
   margin-bottom: .5rem;
-  font-size: smaller;
+  font-size: small;
 }
 .company-footer p{
   margin-top: .5rem;
@@ -169,7 +170,7 @@ height: fit-content;
 }
 
 .footer-end p{
-  font-size: smaller;
+  font-size: small;
   color:#998E8E ;
 }
 
@@ -179,4 +180,15 @@ height: fit-content;
 }
 .swiper-button-prev{
   color: white !important;
+}
+
+.swiper-pagination-bullet {
+  background-color: white !important;
+}
+
+.swiper-pagination  {
+  width: 80px;
+  position: absolute !important;
+  left: 8% !important;
+  bottom: 25% !important;
 }

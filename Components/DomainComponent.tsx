@@ -1,10 +1,10 @@
 import React from 'react'
 import Image from 'next/image'
-import fintech from '../assets/vector (17).png'
-import world from '../assets/vector (27).png'
-import phone from '../assets/vector (12).png'
-import logistics from '../assets/vector (25).png'
-import estate from '../assets/vector (1).png'
+import fintech from '../assets/Group 111.svg'
+import world from '../assets/Group 112.svg'
+import phone from '../assets/Group 114.svg'
+import logistics from '../assets/Group 113.svg'
+import estate from '../assets/Group 63.svg'
 import '../src/app/globals.css'
 
 const DomainComponent = () => {
@@ -22,25 +22,22 @@ const DomainComponent = () => {
 
         <div className="domain-card flex m-8" style={{ gap: '22px', justifyContent: 'center', marginTop: '2rem' }}>
           <section className='flex' style={{ padding: '.5rem', borderRadius: '.5rem', backgroundColor: 'white', alignItems: 'center', width: '22%', gap: '14px', }}>
-            <div className='relative' style={{ borderRadius: '50%', padding: '1.3rem', border: '1px solid blue', width: '4%' }}>
-              <Image style={{ top: '7px', left: '7px', width: '66%' }} className='h-fit absolute top-[50%]' src={fintech} alt='' />
-            </div>
-            <p style={{ fontWeight: '600' }}>
+              <Image style={{ top: '7px',left: '7px', width: '20%' }} className='h-fit' src={fintech} alt='' />
+        
+            <p style={{ fontWeight: '600'}}>
               Fintech
             </p>
           </section>
           <section className='flex' style={{ padding: '.5rem', borderRadius: '.5rem', backgroundColor: 'white', alignItems: 'center', width: '22%', gap: '14px', }}>
-            <div className='relative' style={{ borderRadius: '50%', padding: '1.3rem', border: '1px solid blue', width: '4%' }}>
-              <Image style={{ top: '7px', left: '7px', width: '66%' }} className='h-fit absolute top-[50%]' src={world} alt='' />
-            </div>
+              <Image style={{ top: '7px', left: '7px', width: '20%' }} className='h-fit' src={world} alt='' />
+          
             <p style={{ fontWeight: '600' }}>
               Travel & Hospitality
             </p>
           </section>
           <section className='flex' style={{ padding: '.5rem', borderRadius: '.5rem', backgroundColor: 'white', alignItems: 'center', width: '22%', gap: '14px', }}>
-            <div className='relative' style={{ borderRadius: '50%', padding: '1.3rem', border: '1px solid blue', width: '4%' }}>
-              <Image style={{ top: '7px', left: '7px', width: '66%' }} className='h-fit absolute top-[50%]' src={phone} alt='' />
-            </div>
+              <Image style={{ top: '7px', left: '7px', width: '20%' }} className='h-fit' src={phone} alt='' />
+            
             <p style={{ fontWeight: '600' }}>
               eCommerce & Retail
             </p>
@@ -48,17 +45,17 @@ const DomainComponent = () => {
         </div>
         <div className="domain-card flex" style={{ gap: '22px', justifyContent: 'center', marginTop: '1rem'}}>
           <section className='flex' style={{ padding: '.5rem', borderRadius: '.5rem', backgroundColor: 'white', alignItems: 'center', width: '22%', gap: '14px', }}>
-            <div className='relative' style={{ borderRadius: '50%', padding: '1.3rem', border: '1px solid blue', width: '4%' }}>
-              <Image style={{ top: '7px', left: '7px', width: '66%' }} className='h-fit absolute top-[50%]' src={logistics} alt='' />
-            </div>
+           
+              <Image style={{ top: '7px', left: '7px', width: '20%' }} className='h-fit' src={logistics} alt='' />
+          
             <p style={{ fontWeight: '600' }}>
               Logistics
             </p>
           </section>
           <section className='flex' style={{ padding: '.5rem', borderRadius: '.5rem', backgroundColor: 'white', alignItems: 'center', width: '22%', gap: '14px', }}>
-            <div className='relative' style={{ borderRadius: '50%', padding: '1.3rem', border: '1px solid blue', width: '4%' }}>
-              <Image style={{ top: '7px', left: '7px', width: '66%' }} className='h-fit absolute top-[50%]' src={estate} alt='' />
-            </div>
+            
+              <Image style={{ top: '7px', left: '7px', width: '20%' }} className='h-fit' src={estate} alt='' />
+           
             <p style={{ fontWeight: '600' }}>
               Real Estate
             </p>

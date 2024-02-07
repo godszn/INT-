@@ -1,11 +1,11 @@
 import React from 'react'
 import Image from 'next/image';
-import logo from '../assets/int+.png'
+import logo from '../assets/int+.svg'
 import right from '../assets/Vector (6).png'
-import background from "../assets/vector (20).png";
-import background1 from "../assets/vector (22).png";
-import background2 from "../assets/vector (24).png";
-import background3 from "../assets/vector (23).png";
+import background from "../assets/vector20.svg";
+import background1 from "../assets/image4.svg";
+import background2 from "../assets/image9.svg";
+import background3 from "../assets/image5.svg";
 import '../src/app/globals.css'
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -23,8 +23,7 @@ const imageSlider = () => {
     <div className='flex flex-col items-center justify-between'>
         <nav className='navbar-wrapper justify-between w-full flex  absolute top-0 px-24 mt-9 ' style={{zIndex: '10'}}>
           <section className="navbrand flex">
-            <Image className='h-fit' src={logo} alt='' />
-            <p className='ml-2 text-gray-50 text-xl mt-[1px]'>technology</p>
+            <Image className='h-fit' style={{height: '22px'}}src={logo} alt='' />
           </section>
           <section className="navmenu flex">
             <div className='nav-list flex items-center'>
@@ -52,7 +51,7 @@ const imageSlider = () => {
         modules={[Navigation, Pagination]}
         spaceBetween={0}
         navigation
-        pagination={{ type: 'fraction'}}
+        pagination={{ dynamicBullets: true,}}
         style={{width: '100%'}}
       >
         <SwiperSlide>
@@ -61,7 +60,7 @@ const imageSlider = () => {
             <div className='top-[30%] absolute mx-24 '>
               <div className="main-text-wrapper p-4" style={{ backgroundColor: '#00000036' }}>
                 <section className='text-wrapper text-white'>
-                  <h1 className='text-[30px] mb-4' style={{ fontWeight: '600' }}>
+                  <h1 className='text-[30px] mb-4' style={{ fontWeight: '500' }}>
                     ENTERPISE SOFTWARE DEVELOPMENT
                   </h1>
                   <p>
@@ -70,60 +69,12 @@ const imageSlider = () => {
                   </p>
                 </section>
               </div>
-              <section className='textBtn p-[6px] pr-4 pl-4 text-sm font-semibold items-center justify-between mt-6 flex' style={{ cursor: 'pointer', color: '#1476F2', backgroundColor: 'white', borderRadius: '.2rem', width: '160px' }}>
+              {/* <section className='textBtn p-[6px] pr-4 pl-4 text-sm font-semibold items-center justify-between mt-6 flex' style={{ cursor: 'pointer', color: '#1476F2', backgroundColor: 'white', borderRadius: '.2rem', width: '160px' }}>
                 <p>
                   LEARN MORE
                 </p>
                 <Image className='h-fit' src={right} alt='' />
-              </section>
-            </div>
-          </section>
-        </SwiperSlide>
-        <SwiperSlide>
-          <section className='main-wrap relative w-full'>
-            <Image className='w-full' src={background2} height={500} style={{ backgroundPosition: 'center', backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }} alt='' />
-            <div className='top-[30%] absolute mx-24 '>
-              <div className="main-text-wrapper p-4" style={{ backgroundColor: '#00000036' }}>
-                <section className='text-wrapper text-white'>
-                  <h1 className='text-[30px] mb-4' style={{ fontWeight: '600' }}>
-                  TAILORED MOBILE APP DEVELOPMENT
-                  </h1>
-                  <p>
-                  Get a personalized, user-friendly mobile application designed to cater to your employees or customers with an intuitive and 
-                    visually appealing interface
-                  </p>
-                </section>
-              </div>
-              <section className='textBtn p-[6px] pr-4 pl-4 text-sm font-semibold items-center justify-between mt-6 flex' style={{ cursor: 'pointer', color: '#1476F2', backgroundColor: 'white', borderRadius: '.2rem', width: '160px' }}>
-                <p>
-                  LEARN MORE
-                </p>
-                <Image className='h-fit' src={right} alt='' />
-              </section>
-            </div>
-          </section>
-        </SwiperSlide>
-        <SwiperSlide>
-          <section className='main-wrap relative w-full'>
-            <Image className='w-full' src={background3} height={500} style={{ backgroundPosition: 'center', backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }} alt='' />
-            <div className='top-[30%] absolute mx-24 '>
-              <div className="main-text-wrapper p-4" style={{ backgroundColor: '#00000036' }}>
-                <section className='text-wrapper text-white'>
-                  <h1 className='text-[30px] mb-4' style={{ fontWeight: '600' }}>
-                   SOLUTIONS FOR STARTUPS
-                  </h1>
-                  <p>
-                  Leverage our wealth of expertise in crafting prototypes, MVPs, PoCs, and various digital solutions tailored for startups to drive 
-                  your business forward.
-                  </p>
-                </section>
-              </div>
-              <section className='textBtn p-[6px] pr-4 pl-4 text-sm font-semibold items-center justify-between mt-6 flex' style={{ cursor: 'pointer', color: '#1476F2', backgroundColor: 'white', borderRadius: '.2rem', width: '160px' }}>
-                <p>
-                  LEARN MORE
-                </p>
-                <Image className='h-fit' src={right} alt='' />
-              </section>
+              </section> */}
             </div>
           </section>
         </SwiperSlide>
@@ -133,7 +84,55 @@ const imageSlider = () => {
             <div className='top-[30%] absolute mx-24 '>
               <div className="main-text-wrapper p-4" style={{ backgroundColor: '#00000036' }}>
                 <section className='text-wrapper text-white'>
-                  <h1 className='text-[30px] mb-4' style={{ fontWeight: '600' }}>
+                  <h1 className='text-[30px] mb-4' style={{ fontWeight: '500' }}>
+                  TAILORED MOBILE APP DEVELOPMENT
+                  </h1>
+                  <p>
+                  Get a personalized, user-friendly mobile application designed to cater to your employees or customers with an intuitive and 
+                    visually appealing interface
+                  </p>
+                </section>
+              </div>
+              {/* <section className='textBtn p-[6px] pr-4 pl-4 text-sm font-semibold items-center justify-between mt-6 flex' style={{ cursor: 'pointer', color: '#1476F2', backgroundColor: 'white', borderRadius: '.2rem', width: '160px' }}>
+                <p>
+                  LEARN MORE
+                </p>
+                <Image className='h-fit' src={right} alt='' />
+              </section> */}
+            </div>
+          </section>
+        </SwiperSlide>
+        <SwiperSlide>
+          <section className='main-wrap relative w-full'>
+            <Image className='w-full' src={background2} height={500} style={{ backgroundPosition: 'center', backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }} alt='' />
+            <div className='top-[30%] absolute mx-24 '>
+              <div className="main-text-wrapper p-4" style={{ backgroundColor: '#00000036' }}>
+                <section className='text-wrapper text-white'>
+                  <h1 className='text-[30px] mb-4' style={{ fontWeight: '500' }}>
+                   SOLUTIONS FOR STARTUPS
+                  </h1>
+                  <p>
+                  Leverage our wealth of expertise in crafting prototypes, MVPs, PoCs, and various digital solutions tailored for startups to drive 
+                  your business forward.
+                  </p>
+                </section>
+              </div>
+              {/* <section className='textBtn p-[6px] pr-4 pl-4 text-sm font-semibold items-center justify-between mt-6 flex' style={{ cursor: 'pointer', color: '#1476F2', backgroundColor: 'white', borderRadius: '.2rem', width: '160px' }}>
+                <p>
+                  LEARN MORE
+                </p>
+                <Image className='h-fit' src={right} alt='' />
+              </section> */}
+            </div>
+          </section>
+        </SwiperSlide>
+        <SwiperSlide>
+          <section className='main-wrap relative w-full'>
+            <Image className='w-full' src={background3} height={500} style={{ backgroundPosition: 'center', backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }} alt='' />
+            <div className='top-[30%] absolute mx-24 '>
+              <div className="main-text-wrapper p-4" style={{ backgroundColor: '#00000036' }}>
+                <section className='text-wrapper text-white'>
+                  <h1 className='text-[30px] mb-4' style={{ fontWeight: '500' }}>
                   DEDICATED DEVELOPMENT TEAM
                   </h1>
                   <p>
@@ -142,12 +141,12 @@ const imageSlider = () => {
                   </p>
                 </section>
               </div>
-              <section className='textBtn p-[6px] pr-4 pl-4 text-sm font-semibold items-center justify-between mt-6 flex' style={{ cursor: 'pointer', color: '#1476F2', backgroundColor: 'white', borderRadius: '.2rem', width: '160px' }}>
+              {/* <section className='textBtn p-[6px] pr-4 pl-4 text-sm font-semibold items-center justify-between mt-6 flex' style={{ cursor: 'pointer', color: '#1476F2', backgroundColor: 'white', borderRadius: '.2rem', width: '160px' }}>
                 <p>
                   LEARN MORE
                 </p>
                 <Image className='h-fit' src={right} alt='' />
-              </section>
+              </section> */}
             </div>
           </section>
         </SwiperSlide>
