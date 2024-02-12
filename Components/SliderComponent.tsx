@@ -1,21 +1,25 @@
 import React from 'react'
 import Image from 'next/image';
 import logo from '../assets/int+.svg'
+import logo1 from '../assets/Vector2.svg'
 import right from '../assets/Vector (6).png'
 import background from "../assets/vector20.svg";
 import background1 from "../assets/image4.svg";
 import background2 from "../assets/image9.svg";
 import background3 from "../assets/image5.svg";
+import backgroundSmall from "../assets/image 3.svg";
+import dropdown from '../assets/Group 101.svg'
 import '../src/app/globals.css'
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination } from "swiper/modules";
+import { Navigation, Pagination, Autoplay } from "swiper/modules";
 
 // Import Swiper styles
 import 'swiper/css';
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/navigation';
+import 'swiper/css/autoplay';
 import 'swiper/css/pagination';
 
 const imageSlider = () => {
@@ -23,9 +27,15 @@ const imageSlider = () => {
     <div className='flex flex-col items-center justify-between'>
         <nav className='navbar-wrapper justify-between w-full flex  absolute top-0 px-24 mt-9 ' style={{zIndex: '10'}}>
           <section className="navbrand flex">
-            <Image className='h-fit' style={{height: '22px'}}src={logo} alt='' />
+            <Image className='h-fit' style={{height: '22px'}} src={logo} alt='' />
+          </section>
+          <section className=" mlogo flex">
+            <Image className='h-fit' src={logo1} alt='' />
           </section>
           <section className="navmenu flex">
+            <div>
+              <Image className='h-fit nav-dropdown' style={{display: 'none'}} src={dropdown} alt=''/>
+            </div>
             <div className='nav-list flex items-center'>
               <ul className='flex list text-sm '>
                 <li>
@@ -48,19 +58,21 @@ const imageSlider = () => {
           </section>
         </nav>
       <Swiper
-        modules={[Navigation, Pagination]}
+        modules={[Navigation, Pagination, Autoplay]}
         spaceBetween={0}
+        autoplay={{delay: 5000}}
         navigation
         pagination={{ dynamicBullets: true,}}
         style={{width: '100%'}}
       >
         <SwiperSlide>
           <section className='main-wrap relative w-full'>
-            <Image className='w-full' src={background} height={500} style={{ backgroundPosition: 'center', backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }} alt='' />
-            <div className='top-[30%] absolute mx-24 '>
+            <Image className='w-full bg-full' src={background} height={500} style={{ backgroundPosition: 'center', backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }} alt='' />
+            <Image className='w-full bg-small' src={backgroundSmall} style={{ backgroundPosition: 'center', backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }} alt='' />
+            <div className='enterprise-content top-[30%] absolute mx-24 '>
               <div className="main-text-wrapper p-4" style={{ backgroundColor: '#00000036' }}>
-                <section className='text-wrapper text-white'>
-                  <h1 className='text-[30px] mb-4' style={{ fontWeight: '500' }}>
+                <section className='enterprise-text text-wrapper text-white'>
+                  <h1 className=' text-[30px] mb-4' style={{ fontWeight: '500' }}>
                     ENTERPISE SOFTWARE DEVELOPMENT
                   </h1>
                   <p>
@@ -80,10 +92,11 @@ const imageSlider = () => {
         </SwiperSlide>
         <SwiperSlide>
           <section className='main-wrap relative w-full'>
-            <Image className='w-full' src={background1} height={500} style={{ backgroundPosition: 'center', backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }} alt='' />
-            <div className='top-[30%] absolute mx-24 '>
+            <Image className='w-full bg-full' src={background1} height={500} style={{ backgroundPosition: 'center', backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }} alt='' />
+            <Image className='w-full bg-small' src={backgroundSmall} style={{ backgroundPosition: 'center', backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }} alt='' />
+            <div className='enterprise-content top-[30%] absolute mx-24 '>
               <div className="main-text-wrapper p-4" style={{ backgroundColor: '#00000036' }}>
-                <section className='text-wrapper text-white'>
+                <section className='enterprise-text  text-wrapper text-white'>
                   <h1 className='text-[30px] mb-4' style={{ fontWeight: '500' }}>
                   TAILORED MOBILE APP DEVELOPMENT
                   </h1>
@@ -104,10 +117,11 @@ const imageSlider = () => {
         </SwiperSlide>
         <SwiperSlide>
           <section className='main-wrap relative w-full'>
-            <Image className='w-full' src={background2} height={500} style={{ backgroundPosition: 'center', backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }} alt='' />
-            <div className='top-[30%] absolute mx-24 '>
+            <Image className='w-full bg-full' src={background2} height={500} style={{ backgroundPosition: 'center', backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }} alt='' />
+            <Image className='w-full bg-small' src={backgroundSmall} style={{ backgroundPosition: 'center', backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }} alt='' />
+            <div className='enterprise-content top-[30%] absolute mx-24 '>
               <div className="main-text-wrapper p-4" style={{ backgroundColor: '#00000036' }}>
-                <section className='text-wrapper text-white'>
+                <section className='enterprise-text text-wrapper text-white'>
                   <h1 className='text-[30px] mb-4' style={{ fontWeight: '500' }}>
                    SOLUTIONS FOR STARTUPS
                   </h1>
@@ -128,10 +142,11 @@ const imageSlider = () => {
         </SwiperSlide>
         <SwiperSlide>
           <section className='main-wrap relative w-full'>
-            <Image className='w-full' src={background3} height={500} style={{ backgroundPosition: 'center', backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }} alt='' />
-            <div className='top-[30%] absolute mx-24 '>
+            <Image className='w-full bg-full' src={background3} height={500} style={{ backgroundPosition: 'center', backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }} alt='' />
+            <Image className='w-full bg-small' src={backgroundSmall} style={{ backgroundPosition: 'center', backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }} alt='' />
+            <div className='enterprise-content top-[30%] absolute mx-24 '>
               <div className="main-text-wrapper p-4" style={{ backgroundColor: '#00000036' }}>
-                <section className='text-wrapper text-white'>
+                <section className='enterprise-text text-wrapper text-white'>
                   <h1 className='text-[30px] mb-4' style={{ fontWeight: '500' }}>
                   DEDICATED DEVELOPMENT TEAM
                   </h1>

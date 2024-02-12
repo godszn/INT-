@@ -12,7 +12,7 @@ const DomainComponent = () => {
     <div className='w-full'>
       <main className="domain-wrapper" style={{ backgroundColor: '#F8F8F9', paddingTop: '4rem', paddingBottom: '4rem'}}>
         <div className="domain-text flex flex-col" style={{ textAlign: 'center', alignItems: 'center' }}>
-          <h1 style={{ letterSpacing: '1px', width: '51%', fontSize: '20px', fontWeight: '500' }}>
+          <h1 style={{ letterSpacing: '1px', width: '51%', fontSize: '20px', fontWeight: '600', marginBottom: '2rem' }}>
             MULTI-INDUSTRY EXPERTISE FOR DIFFERENT BUSINESS DOMAIN
           </h1>
           <p className='flex' style={{ textAlign: 'center', alignItems: 'center', width: '75%' }}>

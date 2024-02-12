@@ -101,13 +101,13 @@ const FooterComponent = () => {
                         </p>
                     </section>
                     <section className='flex' style={{ marginTop: '1rem', gap: '.5rem', alignItems: 'center' }}>
-                        <Image src={line} alt='' />
+                        <Image src={line} className='line' alt='' />
                         <p>
                             Terms of use
                         </p>
                     </section>
                     <section className='flex' style={{ marginTop: '1rem', gap: '.5rem', alignItems: 'center' }}>
-                        <Image src={line} alt='' />
+                        <Image src={line} className='line' alt='' />
                         <p>
                             Privacy Policy
                         </p>

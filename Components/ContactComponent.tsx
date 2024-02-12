@@ -18,7 +18,7 @@ const ContactComponent = () => {
                             <input className='m-4' placeholder='Alternative Email*' style={{ borderRadius: '.3rem', border: '1px solid #998E8E', width: '300px', margin: '.5rem', padding: '.5rem' }} />
                             <input className='m-4' placeholder='+234   |' style={{ borderRadius: '.3rem', border: '1px solid #998E8E', width: '300px', margin: '.5rem', padding: '.5rem' }} />
                             <div className='relative'>
-                                <section className='flex' style={{ position: 'absolute', bottom: '25px', right: '23px' }}>
+                                <section className='flex' style={{ position: 'absolute', bottom: '25px', right: '23px' , width: '67px'}}>
                                     <Image alt='' className='h-fit' style={{ width: '17%' }} src={attach} />
                                     <p style={{ color: '#3333338F', fontSize: 'x-small' }}>
                                         Attach files
@@ -28,7 +28,7 @@ const ContactComponent = () => {
                             </div>
                             <div className='p-4'style={{paddingTop: '0'}}>
                                 <section className='flex'>
-                                    <input type="checkbox" />
+                                    <input type="checkbox" style={{width:'19px !important'}} />
                                     <label style={{ fontSize: 'small',marginLeft: '.5rem', color: '#3333338F' }}>
                                         Request NDA
                                     </label>

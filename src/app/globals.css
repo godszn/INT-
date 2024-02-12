@@ -17,6 +17,14 @@
   }
 }
 
+.mlogo {
+  display: none !important;
+}
+
+.bg-small {
+  display: none !important;
+}
+
 
 body {
   margin: 0;
@@ -24,7 +32,7 @@ body {
 
 @font-face {
   font-family: 'Inter', sans-serif;
-  src: url(../font/static/Inter-Regular.ttf);
+  src: url(../font/static/Inter-SemiBold.ttf);
 }
 
 .navmenu {
@@ -46,6 +54,7 @@ body {
   width: 100px;
   border-radius: .3rem;
 }
+
 
 /********** Discover Component **********/
 
@@ -85,6 +94,12 @@ body {
 }
 
 /********** Decision Coponent *********/
+
+.descision-wrapper {
+  background-color: #F8F8F9;
+  margin-bottom: 0 !important;
+}
+
 .decision-container {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -108,6 +123,7 @@ body {
 
 .decision-container-text p {
   width: 90%;
+  color: #333333 !important;
 }
 
 /*********** ContactComponent **********/
@@ -191,4 +207,305 @@ height: fit-content;
   position: absolute !important;
   left: 8% !important;
   bottom: 25% !important;
+}
+
+/********** Media Queries **********/
+@media (min-width: 320px) and (max-width: 424px) {
+
+  /*********** SliderComponent ***********/
+  .nav-list {
+    display: none !important;
+  }
+
+  .navbar-wrapper {
+    padding-left: 2.8rem !important;
+    padding-right: 2.8rem !important;
+  }
+
+  .navbtn{
+    display: none;
+  }
+
+  .nav-dropdown {
+    display: flex !important;
+  }
+
+  .bg-full {
+    display: none !important;
+  }
+
+  .enterprise-content {
+    margin-right: 3rem !important;
+    margin-left: 3rem !important;
+  }
+
+  .enterprise-text h1 {
+    font-size: 20px !important;
+    font-weight: 600 !important;
+  }
+
+  .enterprise-text p {
+    font-size: 12px !important;
+  }
+
+
+  /********** SwiperComponent **********/
+ .swiper-button-next{
+  display: none !important;
+}
+
+.swiper-button-prev{
+display: none !important;
+}
+
+.swiper-pagination  {
+  width: 80px;
+  position: absolute !important;
+  left: 8% !important;
+  bottom: 5% !important;
+}
+  
+}
+
+@media (min-width: 425px) and (max-width: 767px) {
+
+  /*********** SliderComponent ***********/
+  .nav-dropdown {
+    display: flex !important;
+  }
+
+  .navbtn {
+    display: none;
+  }
+
+  .navbrand {
+    display: none !important;
+  }
+
+  .mlogo {
+    display: flex !important;
+  }
+
+  .navbar-wrapper {
+    padding-left: 2.8rem !important;
+    padding-right: 2.8rem !important;
+  }
+
+  .nav-list {
+    display: none !important;
+  }
+
+  .bg-full {
+    display: none !important;
+  }
+
+  .enterprise-content {
+    margin-right: 3rem !important;
+    margin-left: 3rem !important;
+  }
+
+  .enterprise-text h1 {
+    font-size: 20px !important;
+    font-weight: 600 !important;
+  }
+
+  .enterprise-text p {
+    font-size: 12px !important;
+  }
+
+  /********** SwiperComponent **********/
+ .swiper-button-next{
+  display: none !important;
+}
+
+.swiper-button-prev{
+display: none !important;
+}
+
+.swiper-pagination  {
+  width: 80px;
+  position: absolute !important;
+  left: 8% !important;
+  bottom: 5% !important;
+}
+
+/********** SpecializeComponent **********/
+.specialize-wrapper h1{
+  font-weight: 600 !important;
+ width: 92% !important;
+}
+
+.specialize-wrapper p {
+  width: 92% !important;
+}
+
+/********** DiscoverComponent *********/
+.Discover-wrapper > .flex h1{
+  font-weight: 600 !important;
+  width: 92% !important;
+}
+
+.skill-wrapper {
+  width: 100% !important;
+}
+
+.skill-wrapper > .flex > .dropdown img {
+  width: 100% !important;
+}
+
+.skill-details > .flex {
+  flex-direction: column !important;
+  width: 95% !important;
+}
+
+.skill-list {
+  width: 90% !important;
+  flex-direction: column !important;
+  display: flex !important;
+}
+
+/*********** SolutionComponent **********/
+
+.solution-wrapper {
+  align-items: center !important;
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+.solution-wrapper h1 {
+  width: 70% !important;
+  font-weight: 600 !important;
+}
+
+.maincard-wrapper {
+  padding-left: 2rem !important;
+    display: flex !important;
+    flex-direction: column !important;
+    padding-right: 2rem !important;
+}
+
+/********** DevelopmentComponent *********/
+.development-wrapper{
+  padding-left: 2rem !important;
+  padding-right: 2rem !important;
+}
+
+.development-text {
+  align-items: center !important ;
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+.development-text h1 {
+  font-weight: 600 !important;
+  width: 76% !important;
+}
+
+.development-wrapper img {
+  width: 100% !important;
+}
+
+/************ DomainComponent *********/
+.domain-wrapper {
+  align-items: center !important;
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+.domain-card {
+  margin: 0 !important;
+  flex-direction: column !important;
+  width: 82% !important;
+  padding-top: 2rem !important;
+}
+
+.domain-card > .flex {
+  width: 100% !important;
+  gap: 55px !important;
+}
+
+.domain-card > .flex p{
+  font-size: 21px;
+}
+
+/********** DecisionComponent **********/
+
+.decision-container {
+  display: flex !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  flex-direction: column !important;
+}
+
+.decision-container-text {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  margin-top: 2rem !important;
+  display: flex !important;
+  flex-direction: column !important;
+  margin-bottom: 1rem !important;
+}
+
+.fe {
+  justify-content: flex-start !important;
+  gap: 1.2rem !important;
+}
+
+.decision-content img {
+  width: 7% !important;
+}
+
+.decision-content p{
+  font-weight: 600 !important;
+}
+
+/********** ContactComponent **********/
+.contact-container {
+  padding: 0 !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    padding-top: 1rem !important;
+}
+
+.contact-text {
+  width: 75% !important;
+}
+
+.contact-input input {
+  width: 316px !important;
+}
+
+.checkbox {
+  width: 19px !important ;
+}
+
+/********** FooterComponent **********/
+
+.footer-items{
+  flex-direction: column !important;
+    padding-right: 4rem !important;
+    padding-left: 4rem !important;
+    gap: 3rem !important;
+}
+
+.service-footer p{
+  display: none !important;
+}
+
+.industry-footer p{
+  display: none !important;
+}
+
+.company-footer p{
+  display: none !important;
+}
+
+.footer-end {
+  border-top: none !important;
+  gap: 0 !important;
+}
+
+.line {
+  display: none !important;
+}
 }

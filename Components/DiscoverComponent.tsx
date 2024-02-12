@@ -80,7 +80,7 @@ const DiscoverComponent = () => {
                     </h1>
                 </section>
                 <div className="skill-wrapper flex flex-col">
-                    <div className='flex' style={{ marginTop: '.5rem', marginBottom: '.5rem', width: '94%', justifyContent: 'space-between', alignItems: 'center' }}>
+                    <div className='flex' onClick={dropdownDetail} style={{ marginTop: '.5rem', marginBottom: '.5rem', width: '94%', justifyContent: 'space-between', alignItems: 'center' }}>
                         <div className="skill-logo flex items-center">
                                 <Image style={{ top: '10px', left: '5px', width: '23%' }} className='h-fit' src={skill1} alt='' />
                             <h1 style={{ marginLeft: '1rem', fontWeight: '600', color: '#333333' }}>
@@ -110,7 +110,7 @@ const DiscoverComponent = () => {
                     )}
                 </div>
                 <div className="skill-wrapper flex flex-col">
-                    <div className='flex' style={{ marginTop: '.5rem', marginBottom: '.5rem', width: '94%', justifyContent: 'space-between', alignItems: 'center' }}>
+                    <div className='flex' onClick={dropdownDetail1} style={{ marginTop: '.5rem', marginBottom: '.5rem', width: '94%', justifyContent: 'space-between', alignItems: 'center' }}>
                         <div className="skill-logo flex items-center">
                                 <Image style={{ top: '4px', left: '10px', width: '19%' }} className='h-fit' src={skill2} alt='' />
 
@@ -146,7 +146,7 @@ const DiscoverComponent = () => {
                     )}
                 </div>
                 <div className="skill-wrapper flex flex-col">
-                    <div className='flex' style={{ marginTop: '.5rem', marginBottom: '.5rem', width: '94%', justifyContent: 'space-between', alignItems: 'center' }}>
+                    <div className='flex' onClick={dropdownDetail2} style={{ marginTop: '.5rem', marginBottom: '.5rem', width: '94%', justifyContent: 'space-between', alignItems: 'center' }}>
                         <div className="skill-logo flex items-center">
                                 <Image style={{ top: '7px', left: '7px', width: '15%' }} className='h-fit' src={skill3} alt='' />
                             <h1 style={{ marginLeft: '1rem', fontWeight: '600', color: '#333333' }}>
@@ -172,7 +172,7 @@ const DiscoverComponent = () => {
                     )}
                 </div>
                 <div className="skill-wrapper flex flex-col">
-                    <div className='flex' style={{ marginTop: '.5rem', marginBottom: '.5rem', width: '94%', justifyContent: 'space-between', alignItems: 'center' }}>
+                    <div className='flex' onClick={dropdownDetail3} style={{ marginTop: '.5rem', marginBottom: '.5rem', width: '94%', justifyContent: 'space-between', alignItems: 'center' }}>
                         <div className="skill-logo flex items-center">
                                 <Image style={{ top: '4px', left: '6px', width: '16%' }} className='h-fit' src={skill4} alt='' />
                             <h1 style={{ marginLeft: '1rem', fontWeight: '600', color: '#333333' }}>
@@ -198,7 +198,7 @@ const DiscoverComponent = () => {
                     )}
                 </div>
                 <div className="skill-wrapper flex flex-col">
-                    <div className='flex' style={{ marginTop: '.5rem', marginBottom: '.5rem', width: '94%', justifyContent: 'space-between', alignItems: 'center' }}>
+                    <div className='flex' onClick={dropdownDetail4} style={{ marginTop: '.5rem', marginBottom: '.5rem', width: '94%', justifyContent: 'space-between', alignItems: 'center' }}>
                         <div className="skill-logo flex items-center">
                                 <Image style={{ top: '7px', left: '8px', width: '15%' }} className='h-fit' src={skill5} alt='' />
                             <h1 style={{ marginLeft: '1rem', fontWeight: '600', color: '#333333' }}>
@@ -224,7 +224,7 @@ const DiscoverComponent = () => {
                     )}
                 </div>
                 <div className="skill-wrapper flex flex-col">
-                    <div className='flex' style={{ marginTop: '.5rem', marginBottom: '.5rem', width: '94%', justifyContent: 'space-between', alignItems: 'center' }}>
+                    <div className='flex' onClick={dropdownDetail5} style={{ marginTop: '.5rem', marginBottom: '.5rem', width: '94%', justifyContent: 'space-between', alignItems: 'center' }}>
                         <div className="skill-logo flex items-center">
                                 <Image style={{ top: '10px', left: '5px', width: '13%' }} className='h-fit' src={skill6} alt='' />
                             <h1 style={{ marginLeft: '1rem', fontWeight: '600', color: '#333333' }}>
@@ -250,7 +250,7 @@ const DiscoverComponent = () => {
                     )}
                 </div>
                 <div className="skill-wrapper flex flex-col">
-                    <div className='flex' style={{ marginTop: '.5rem', marginBottom: '.5rem', width: '94%', justifyContent: 'space-between', alignItems: 'center' }}>
+                    <div className='flex' onClick={dropdownDetail6} style={{ marginTop: '.5rem', marginBottom: '.5rem', width: '94%', justifyContent: 'space-between', alignItems: 'center' }}>
                         <div className="skill-logo flex items-center">
                                 <Image style={{ top: '10px', left: '5px', width: '28%' }} className='h-fit' src={skill7} alt='' />
                             <h1 style={{ marginLeft: '1rem', fontWeight: '600', color: '#333333' }}>
@@ -275,7 +275,7 @@ const DiscoverComponent = () => {
                     )}
                 </div>
                 <div className="skill-wrapper flex flex-col">
-                    <div className='flex' style={{ marginTop: '.5rem', marginBottom: '.5rem', width: '94%', justifyContent: 'space-between', alignItems: 'center' }}>
+                    <div className='flex' onClick={dropdownDetail7} style={{ marginTop: '.5rem', marginBottom: '.5rem', width: '94%', justifyContent: 'space-between', alignItems: 'center' }}>
                         <div className="skill-logo flex items-center">
                                 <Image style={{ top: '6px', left: '7px', width: '28%' }} className='h-fit' src={skill8} alt='' />
                             <h1 style={{ marginLeft: '1rem', fontWeight: '600', color: '#333333' }}>
@@ -301,7 +301,7 @@ const DiscoverComponent = () => {
                     )}
                 </div>
                 <div className="skill-wrapper flex flex-col">
-                    <div className='flex' style={{ marginTop: '.5rem', marginBottom: '.5rem', width: '94%', justifyContent: 'space-between', alignItems: 'center' }}>
+                    <div className='flex' onClick={dropdownDetail8} style={{ marginTop: '.5rem', marginBottom: '.5rem', width: '94%', justifyContent: 'space-between', alignItems: 'center' }}>
                         <div className="skill-logo flex items-center">
                                 <Image style={{ top: '5px', left: '5px', width: '16%' }} className='h-fit' src={skill9} alt='' />
                             <h1 style={{ marginLeft: '1rem', fontWeight: '600', color: '#333333' }}>

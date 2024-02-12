@@ -8,7 +8,7 @@ const DecisionComponent = () => {
         <div className='w-full'>
             <div className="descision-wrapper" style={{ padding: '2rem', marginBottom: '2rem' }}>
                 <section className="decision-text" style={{ textAlign: 'center' }}>
-                    <h1 style={{ fontWeight: '500', fontSize: '20px', marginBottom: '1rem', letterSpacing: '1px' }}>
+                    <h1 style={{ fontWeight: '600', fontSize: '20px', marginBottom: '1rem', letterSpacing: '1px' }}>
                         WHY CHOOSE INT+
                     </h1>
                     <p>
@@ -22,7 +22,7 @@ const DecisionComponent = () => {
                             Technological competitive advantage
                         </p>
                     </div>
-                    <div className="decision-content flex" style={{ gap: '1rem', alignItems: 'center', justifyContent: 'flex-end' }}>
+                    <div className="decision-content fe flex" style={{ gap: '1rem', alignItems: 'center', justifyContent: 'flex-end' }}>
                         <Image style={{ width: '5%', height: 'fit-content' }} src={tick} alt='' />
                         <p style={{ fontWeight: '500' }}>
                             End-user satisfaction rate increase
@@ -34,7 +34,7 @@ const DecisionComponent = () => {
                             Reduced time-to-market
                         </p>
                     </div>
-                    <div className="decision-content flex" style={{ gap: '2.2rem', alignItems: 'center', justifyContent: 'flex-end' }}>
+                    <div className="decision-content fe flex" style={{ gap: '2.2rem', alignItems: 'center', justifyContent: 'flex-end' }}>
                         <Image style={{ width: '5%', height: 'fit-content' }} src={tick} alt='' />
                         <p style={{ fontWeight: '500' }}>
                             Efficiency and productivity boost
