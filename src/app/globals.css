@@ -508,4 +508,8 @@ display: none !important;
 .line {
   display: none !important;
 }
+
+.bg-small  {
+  display: flex !important;
+}
 }
