@@ -94,20 +94,34 @@ const FooterComponent = () => {
                     </div>
                 </div>
                 <div className='footer-end flex' style={{ borderTop: '1px solid black', gap: '2rem' }}>
+<<<<<<< HEAD
                     <section className='flex footsmall' style={{ marginTop: '1rem', gap: '.5rem', alignItems: 'center' }}>
+=======
+                    <section className='flex' style={{ marginTop: '1rem', gap: '.5rem', alignItems: 'center' }}>
+>>>>>>> f44d7a60a6170846d0d2ba2a11298e8a3bc6c46f
                         <Image src={cap} alt='' />
                         <p>
                             2024 Int+
                         </p>
                     </section>
+<<<<<<< HEAD
                     <section className='flex footsmall' style={{ marginTop: '1rem', gap: '.5rem', alignItems: 'center' }}>
                         <Image src={line} className='line' alt='' />
+=======
+                    <section className='flex' style={{ marginTop: '1rem', gap: '.5rem', alignItems: 'center' }}>
+                        <Image src={line} alt='' />
+>>>>>>> f44d7a60a6170846d0d2ba2a11298e8a3bc6c46f
                         <p>
                             Terms of use
                         </p>
                     </section>
+<<<<<<< HEAD
                     <section className='flex  footsmall' style={{ marginTop: '1rem', gap: '.5rem', alignItems: 'center' }}>
                         <Image src={line} className='line' alt='' />
+=======
+                    <section className='flex' style={{ marginTop: '1rem', gap: '.5rem', alignItems: 'center' }}>
+                        <Image src={line} alt='' />
+>>>>>>> f44d7a60a6170846d0d2ba2a11298e8a3bc6c46f
                         <p>
                             Privacy Policy
                         </p>

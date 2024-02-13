@@ -8,7 +8,11 @@ const DecisionComponent = () => {
         <div className='w-full'>
             <div className="descision-wrapper" style={{ padding: '2rem', marginBottom: '2rem' }}>
                 <section className="decision-text" style={{ textAlign: 'center' }}>
+<<<<<<< HEAD
                     <h1 style={{ fontWeight: '600', fontSize: '20px', marginBottom: '1rem', letterSpacing: '1px' }}>
+=======
+                    <h1 style={{ fontWeight: '500', fontSize: '20px', marginBottom: '1rem', letterSpacing: '1px' }}>
+>>>>>>> f44d7a60a6170846d0d2ba2a11298e8a3bc6c46f
                         WHY CHOOSE INT+
                     </h1>
                     <p>
@@ -22,7 +26,11 @@ const DecisionComponent = () => {
                             Technological competitive advantage
                         </p>
                     </div>
+<<<<<<< HEAD
                     <div className="decision-content fe flex" style={{ gap: '1rem', alignItems: 'center', justifyContent: 'flex-end' }}>
+=======
+                    <div className="decision-content flex" style={{ gap: '1rem', alignItems: 'center', justifyContent: 'flex-end' }}>
+>>>>>>> f44d7a60a6170846d0d2ba2a11298e8a3bc6c46f
                         <Image style={{ width: '5%', height: 'fit-content' }} src={tick} alt='' />
                         <p style={{ fontWeight: '500' }}>
                             End-user satisfaction rate increase
@@ -34,7 +42,11 @@ const DecisionComponent = () => {
                             Reduced time-to-market
                         </p>
                     </div>
+<<<<<<< HEAD
                     <div className="decision-content fe flex" style={{ gap: '2.2rem', alignItems: 'center', justifyContent: 'flex-end' }}>
+=======
+                    <div className="decision-content flex" style={{ gap: '2.2rem', alignItems: 'center', justifyContent: 'flex-end' }}>
+>>>>>>> f44d7a60a6170846d0d2ba2a11298e8a3bc6c46f
                         <Image style={{ width: '5%', height: 'fit-content' }} src={tick} alt='' />
                         <p style={{ fontWeight: '500' }}>
                             Efficiency and productivity boost

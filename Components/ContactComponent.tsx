@@ -1,7 +1,13 @@
+<<<<<<< HEAD
 import React from 'react'
 import '../src/app/globals.css'
 import Image from 'next/image'
 import attach from '../assets/attach.png'
+=======
+import Image from 'next/image'
+import attach from '../assets/attach.png'
+import '../src/app/globals.css'
+>>>>>>> f44d7a60a6170846d0d2ba2a11298e8a3bc6c46f
 
 const ContactComponent = () => {
     return (
@@ -18,12 +24,17 @@ const ContactComponent = () => {
                             <input className='m-4' placeholder='Alternative Email*' style={{ borderRadius: '.3rem', border: '1px solid #998E8E', width: '300px', margin: '.5rem', padding: '.5rem' }} />
                             <input className='m-4' placeholder='+234   |' style={{ borderRadius: '.3rem', border: '1px solid #998E8E', width: '300px', margin: '.5rem', padding: '.5rem' }} />
                             <div className='relative'>
+<<<<<<< HEAD
                                 <section className='flex' style={{ position: 'absolute', bottom: '25px', right: '23px' , width: '67px'}}>
+=======
+                                <section className='flex' style={{ position: 'absolute', bottom: '25px', right: '23px' }}>
+>>>>>>> f44d7a60a6170846d0d2ba2a11298e8a3bc6c46f
                                     <Image alt='' className='h-fit' style={{ width: '17%' }} src={attach} />
                                     <p style={{ color: '#3333338F', fontSize: 'x-small' }}>
                                         Attach files
                                     </p>
                                 </section>
+<<<<<<< HEAD
                                 <textarea className='m-4' placeholder='Tell us about your project*' style={{ borderRadius: '.3rem', border: '1px solid #998E8E', width: '316px', height: '120px', margin: '.5rem', padding: '.5rem' }} />
                             </div>
                             <div className='p-4'style={{paddingTop: '0'}}>
@@ -34,6 +45,18 @@ const ContactComponent = () => {
                                     </label>
                                 </section>
                                 <p style={{ fontSize: 'x-small',paddingTop: '1rem',color: '#3333338F'}}>
+=======
+                                <textarea className='m-4' placeholder='Tell us about your project*' style={{ borderRadius: '.3rem', border: '1px solid #998E8E', width: '300px', height: '120px', margin: '.5rem', padding: '.5rem' }} />
+                            </div>
+                            <div className='p-4' style={{ paddingTop: '0' }}>
+                                <section className='flex'>
+                                    <input type="checkbox" />
+                                    <label style={{ fontSize: 'small', marginLeft: '.5rem', color: '#3333338F' }}>
+                                        Request NDA
+                                    </label>
+                                </section>
+                                <p style={{ fontSize: 'x-small', paddingTop: '1rem', color: '#3333338F' }}>
+>>>>>>> f44d7a60a6170846d0d2ba2a11298e8a3bc6c46f
                                     By sending this form I confirm that I have read and accept Int+
                                     <a style={{ color: '#2D7EFF', marginLeft: '.5rem' }} href="https://www.sportybet.com/ng/m/">Privacy Policy</a>
                                 </p>
@@ -45,7 +68,11 @@ const ContactComponent = () => {
                     </section>
                     <section className="contact-text" style={{ color: 'white', width: '44%', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
                         <h1 style={{ fontSize: '20px', fontWeight: '500', marginBottom: '1rem' }}>
+<<<<<<< HEAD
                             WHAT'S NEXT?
+=======
+                            WHAT&apos;S NEXT?
+>>>>>>> f44d7a60a6170846d0d2ba2a11298e8a3bc6c46f
                         </h1>
                         <ul className='contact-list'>
                             <li style={{ listStyle: 'outside' }}>

@@ -508,7 +508,7 @@ display: none !important;
 
 .footsmall {
   justify-content: center !important;
-  margin-top: 0 !important;
+  margin-top: 0;
 }
 
 .line {

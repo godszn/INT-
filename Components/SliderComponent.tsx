@@ -16,6 +16,10 @@ import '../src/app/globals.css'
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
+import '../src/app/globals.css'
+// Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination } from "swiper/modules";
 
 // Import Swiper styles
 import 'swiper/css';
@@ -39,6 +43,9 @@ const imageSlider = () => {
             <div>
               <Image className='h-fit nav-dropdown' style={{display: 'none', width: '40px'}} src={dropdown} alt=''/>
             </div>
+            <Image className='h-fit' style={{height: '22px'}}src={logo} alt='' />
+          </section>
+          <section className="navmenu flex">
             <div className='nav-list flex items-center'>
               <ul className='flex list text-sm '>
                 <li>
@@ -64,6 +71,8 @@ const imageSlider = () => {
         modules={[Navigation, Pagination, Autoplay]}
         spaceBetween={0}
         autoplay={{delay: 5000}}
+        modules={[Navigation, Pagination]}
+        spaceBetween={0}
         navigation
         pagination={{ dynamicBullets: true,}}
         style={{width: '100%'}}
@@ -76,6 +85,11 @@ const imageSlider = () => {
               <div className="main-text-wrapper p-4" style={{ backgroundColor: '#00000036' }}>
                 <section className='enterprise-text text-wrapper text-white'>
                   <h1 className=' text-[30px] mb-4' style={{ fontWeight: '500' }}>
+            <Image className='w-full' src={background} height={500} style={{ backgroundPosition: 'center', backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }} alt='' />
+            <div className='top-[30%] absolute mx-24 '>
+              <div className="main-text-wrapper p-4" style={{ backgroundColor: '#00000036' }}>
+                <section className='text-wrapper text-white'>
+                  <h1 className='text-[30px] mb-4' style={{ fontWeight: '500' }}>
                     ENTERPISE SOFTWARE DEVELOPMENT
                   </h1>
                   <p>
@@ -100,6 +114,10 @@ const imageSlider = () => {
             <div className='enterprise-content top-[30%] absolute mx-24 '>
               <div className="main-text-wrapper p-4" style={{ backgroundColor: '#00000036' }}>
                 <section className='enterprise-text  text-wrapper text-white'>
+            <Image className='w-full' src={background1} height={500} style={{ backgroundPosition: 'center', backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }} alt='' />
+            <div className='top-[30%] absolute mx-24 '>
+              <div className="main-text-wrapper p-4" style={{ backgroundColor: '#00000036' }}>
+                <section className='text-wrapper text-white'>
                   <h1 className='text-[30px] mb-4' style={{ fontWeight: '500' }}>
                   TAILORED MOBILE APP DEVELOPMENT
                   </h1>
@@ -125,6 +143,10 @@ const imageSlider = () => {
             <div className='enterprise-content top-[30%] absolute mx-24 '>
               <div className="main-text-wrapper p-4" style={{ backgroundColor: '#00000036' }}>
                 <section className='enterprise-text text-wrapper text-white'>
+            <Image className='w-full' src={background2} height={500} style={{ backgroundPosition: 'center', backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }} alt='' />
+            <div className='top-[30%] absolute mx-24 '>
+              <div className="main-text-wrapper p-4" style={{ backgroundColor: '#00000036' }}>
+                <section className='text-wrapper text-white'>
                   <h1 className='text-[30px] mb-4' style={{ fontWeight: '500' }}>
                    SOLUTIONS FOR STARTUPS
                   </h1>
@@ -150,6 +172,10 @@ const imageSlider = () => {
             <div className='enterprise-content top-[30%] absolute mx-24 '>
               <div className="main-text-wrapper p-4" style={{ backgroundColor: '#00000036' }}>
                 <section className='enterprise-text text-wrapper text-white'>
+            <Image className='w-full' src={background3} height={500} style={{ backgroundPosition: 'center', backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }} alt='' />
+            <div className='top-[30%] absolute mx-24 '>
+              <div className="main-text-wrapper p-4" style={{ backgroundColor: '#00000036' }}>
+                <section className='text-wrapper text-white'>
                   <h1 className='text-[30px] mb-4' style={{ fontWeight: '500' }}>
                   DEDICATED DEVELOPMENT TEAM
                   </h1>
