@@ -8,6 +8,9 @@ import background1 from "../assets/image4.svg";
 import background2 from "../assets/image9.svg";
 import background3 from "../assets/image5.svg";
 import backgroundSmall from "../assets/image 3.svg";
+import backgroundSmall1 from "../assets/image 5.svg";
+import backgroundSmall2 from "../assets/image 9.svg";
+import backgroundSmall3 from "../assets/image 4.svg";
 import dropdown from '../assets/Group 101.svg'
 import '../src/app/globals.css'
 // Import Swiper React components
@@ -34,7 +37,7 @@ const imageSlider = () => {
           </section>
           <section className="navmenu flex">
             <div>
-              <Image className='h-fit nav-dropdown' style={{display: 'none'}} src={dropdown} alt=''/>
+              <Image className='h-fit nav-dropdown' style={{display: 'none', width: '40px'}} src={dropdown} alt=''/>
             </div>
             <div className='nav-list flex items-center'>
               <ul className='flex list text-sm '>
@@ -93,7 +96,7 @@ const imageSlider = () => {
         <SwiperSlide>
           <section className='main-wrap relative w-full'>
             <Image className='w-full bg-full' src={background1} height={500} style={{ backgroundPosition: 'center', backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }} alt='' />
-            <Image className='w-full bg-small' src={backgroundSmall} style={{ backgroundPosition: 'center', backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }} alt='' />
+            <Image className='w-full bg-small' src={backgroundSmall1} style={{ backgroundPosition: 'center', backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }} alt='' />
             <div className='enterprise-content top-[30%] absolute mx-24 '>
               <div className="main-text-wrapper p-4" style={{ backgroundColor: '#00000036' }}>
                 <section className='enterprise-text  text-wrapper text-white'>
@@ -118,7 +121,7 @@ const imageSlider = () => {
         <SwiperSlide>
           <section className='main-wrap relative w-full'>
             <Image className='w-full bg-full' src={background2} height={500} style={{ backgroundPosition: 'center', backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }} alt='' />
-            <Image className='w-full bg-small' src={backgroundSmall} style={{ backgroundPosition: 'center', backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }} alt='' />
+            <Image className='w-full bg-small' src={backgroundSmall2} style={{ backgroundPosition: 'center', backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }} alt='' />
             <div className='enterprise-content top-[30%] absolute mx-24 '>
               <div className="main-text-wrapper p-4" style={{ backgroundColor: '#00000036' }}>
                 <section className='enterprise-text text-wrapper text-white'>
@@ -143,7 +146,7 @@ const imageSlider = () => {
         <SwiperSlide>
           <section className='main-wrap relative w-full'>
             <Image className='w-full bg-full' src={background3} height={500} style={{ backgroundPosition: 'center', backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }} alt='' />
-            <Image className='w-full bg-small' src={backgroundSmall} style={{ backgroundPosition: 'center', backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }} alt='' />
+            <Image className='w-full bg-small' src={backgroundSmall3} style={{ backgroundPosition: 'center', backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }} alt='' />
             <div className='enterprise-content top-[30%] absolute mx-24 '>
               <div className="main-text-wrapper p-4" style={{ backgroundColor: '#00000036' }}>
                 <section className='enterprise-text text-wrapper text-white'>

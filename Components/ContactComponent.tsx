@@ -24,7 +24,7 @@ const ContactComponent = () => {
                                         Attach files
                                     </p>
                                 </section>
-                                <textarea className='m-4' placeholder='Tell us about your project*' style={{ borderRadius: '.3rem', border: '1px solid #998E8E', width: '300px', height: '120px', margin: '.5rem', padding: '.5rem' }} />
+                                <textarea className='m-4' placeholder='Tell us about your project*' style={{ borderRadius: '.3rem', border: '1px solid #998E8E', width: '316px', height: '120px', margin: '.5rem', padding: '.5rem' }} />
                             </div>
                             <div className='p-4'style={{paddingTop: '0'}}>
                                 <section className='flex'>

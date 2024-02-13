@@ -94,19 +94,19 @@ const FooterComponent = () => {
                     </div>
                 </div>
                 <div className='footer-end flex' style={{ borderTop: '1px solid black', gap: '2rem' }}>
-                    <section className='flex' style={{ marginTop: '1rem', gap: '.5rem', alignItems: 'center' }}>
+                    <section className='flex footsmall' style={{ marginTop: '1rem', gap: '.5rem', alignItems: 'center' }}>
                         <Image src={cap} alt='' />
                         <p>
                             2024 Int+
                         </p>
                     </section>
-                    <section className='flex' style={{ marginTop: '1rem', gap: '.5rem', alignItems: 'center' }}>
+                    <section className='flex footsmall' style={{ marginTop: '1rem', gap: '.5rem', alignItems: 'center' }}>
                         <Image src={line} className='line' alt='' />
                         <p>
                             Terms of use
                         </p>
                     </section>
-                    <section className='flex' style={{ marginTop: '1rem', gap: '.5rem', alignItems: 'center' }}>
+                    <section className='flex  footsmall' style={{ marginTop: '1rem', gap: '.5rem', alignItems: 'center' }}>
                         <Image src={line} className='line' alt='' />
                         <p>
                             Privacy Policy
