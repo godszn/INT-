@@ -328,6 +328,6 @@ const DiscoverComponent = () => {
             </section>
         </div>
     )
-}
+} 
 
 export default DiscoverComponent

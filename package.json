@@ -13,13 +13,7 @@
     "react": "^18",
     "react-bootstrap": "^2.10.0",
     "react-dom": "^18",
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
     "sharp": "^0.33.2",
->>>>>>> f44d7a60a6170846d0d2ba2a11298e8a3bc6c46f
->>>>>>> origin/main
     "swiper": "^11.0.5"
   },
   "devDependencies": {

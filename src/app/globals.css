@@ -17,6 +17,74 @@
   }
 }
 
+.active {
+  color: #2D7EFF !important;
+}
+
+.backgroundDrop {
+  font-size: 17px;
+  position: absolute;
+  top: 38%;
+  color: white;
+  width: 64%;
+  left: 11%;
+  color: #ffffffbf;
+}
+
+#nav {
+  z-index: 10;
+}
+
+.dropdown-wrapper {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  transition: all .5s ease-in-out;
+  height: 100vh;
+  background-color: white;
+  z-index: 100;
+  animation: slide 0.4s ease-in-out
+}
+
+@keyframes slide {
+   0% {
+    left: 100%;
+   }
+   100% {
+    left: 0%;
+   }
+}
+
+.dropdown-widget {
+  justify-content: space-between;
+    padding: 2rem;
+}
+
+body.bodyscroll {
+  overflow: hidden;
+}
+
+.dropdown-list {
+  line-height: 3;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 2rem;
+  margin-top: 3rem;
+}
+
+.dropDetails {
+  background-color: white;
+  z-index: 100 !important;
+  top: 5.7rem;
+  width: 100%;
+  border-top: 1px solid lightgrey;
+}
+
+.side-mav {
+  padding-left: 72px;
+  padding-right: 105px;
+}
+
 .mlogo {
   display: none !important;
 }
@@ -36,7 +104,6 @@ body {
 }
 
 .navmenu {
-  font-family: 'Inter', sans-serif;
   color: white;
 }
 
@@ -46,12 +113,15 @@ body {
 
 .list li {
   margin-right: 1rem;
+  cursor: pointer !important;
 }
 
 .navbtn {
   background-color: #F54D4D;
   padding: .5rem;
-  width: 100px;
+  width: 110px;
+  justify-content: center;
+  height: 40px;
   border-radius: .3rem;
 }
 

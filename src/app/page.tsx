@@ -11,12 +11,19 @@ import DecisionComponent from '../../Components/DecisionComponent'
 import ContactComponent from '../../Components/ContactComponent'
 import FooterComponent from '../../Components/FooterComponent'
 import SliderComponent from '../../Components/SliderComponent'
-
+import DropdownComponent from '../../Components/DropdownComponent'
 
 export default function Home() {
+  const [showDropdown, setDropdown ] =useState(false)
+
+const handleDropdown =  () => {
+  setDropdown((!showDropdown))
+  document.body.classList.toggle('bodyscroll')
+}
   return (
     <main>
-      <SliderComponent/>
+      <SliderComponent menuClick = {handleDropdown}/>
+      {showDropdown && <DropdownComponent menuClick = {handleDropdown}/>}
       <SpecializeComponent />
       <DiscoverComponent/>
       <SolutionComponent/>
