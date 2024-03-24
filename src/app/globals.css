@@ -54,6 +54,32 @@
     left: 0%;
    }
 }
+@keyframes slide {
+   0% {
+    left: 100%;
+   }
+   100% {
+    left: 0%;
+   }
+}
+@keyframes slide1 {
+   0% {
+    left: 60%;
+   }
+   100% {
+    left: 7%;
+   }
+}
+
+.serv-dropdown {
+  list-style: none;
+  animation: slide1 0.4s ease-in-out;
+}
+
+.serv-dropdown h1{
+color: #2D7EFF;
+}
+
 
 .dropdown-widget {
   justify-content: space-between;
@@ -279,12 +305,175 @@ height: fit-content;
   bottom: 25% !important;
 }
 
+/********** Service Component *********/
+.development-service {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.development-service > h1 {
+  text-align: center;
+    color: #333333;
+    font-size: 25px;
+    font-weight: 600;
+    width: 37%;
+}
+.lifecycle-wrapper{
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  padding-top: 4rem;
+  flex-direction: column;
+}
+
+.lifecycle-wrapper > h1 {
+  text-align: center;
+    color: #333333;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.lifecycle-widget {
+  padding: 4rem;
+  padding-bottom: 6rem;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.serviceCard-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: .4rem;
+  padding-top: 1rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+.service-card {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  gap: 2rem;
+  width: 300px;
+  height: 250px;
+}
+
+.service-card img {
+  width: 25%;
+  margin-top: 2rem;
+}
+
+.front {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  background-color: white;
+  gap: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-text {
+  position: absolute;
+  background-color: #2D7EFF;
+  width: 100%;
+  height: 100%;
+  color: white;
+  padding: 2rem;
+  text-align: start;
+  gap: 30px;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+}
+
+.cardwrap {
+  transform-style: preserve-3d;
+  transition: all 1.5s ease;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.service-card:hover > .cardwrap {
+ transform: rotateY(180deg);
+ cursor: pointer;
+}
+
+/********** Industry Component **********/
+.platform-wrapper {
+  background-color: #2D7EFF;
+  align-items: center;
+  padding-top: 4rem;
+  padding-left: 2rem;
+  padding-bottom: 4rem;
+}
+
+.platform-wrapper h1 {
+  font-weight: 600;
+  color: black;
+  font-size: 30px;
+  line-height: 1.2;
+  width: 64%;
+}
+
+.platform-wrapper p {
+  width: 68%;
+  font-size: 20px;
+  color: white;
+  margin-top: 7rem;
+}
+
+.analytics-container {
+  background-color: #F9F9F9;
+}
+
+/********** Client component **********/
+.client-card {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center; 
+  box-shadow: 2px 5px 11px #00000059;
+  cursor: pointer;
+  border-radius: 4.2px;
+  transition: all .5s ease-in-out;
+}
+
+.client-card:hover {
+  transform: scale(1.02);
+  transition: all .5s ease-in-out;
+}
+
+.client-card p{
+  width: 66%;
+}
+
 /********** Media Queries **********/
 @media (min-width: 320px) and (max-width: 424px) {
 
   /*********** SliderComponent ***********/
   .nav-list {
     display: none !important;
+  }
+
+  .navbrand {
+    display: none !important;
+  }
+
+
+  .mlogo {
+    display: flex !important;
   }
 
   .navbar-wrapper {
@@ -305,13 +494,14 @@ height: fit-content;
   }
 
   .enterprise-content {
-    margin-right: 3rem !important;
-    margin-left: 3rem !important;
+    margin-right: 1rem !important;
+    margin-left: 1rem !important;
   }
 
   .enterprise-text h1 {
     font-size: 20px !important;
     font-weight: 600 !important;
+    width: 101% !important;
   }
 
   .enterprise-text p {
@@ -339,7 +529,7 @@ display: none !important;
 /********** SpecializeComponent **********/
 .specialize-wrapper h1{
   font-weight: 600 !important;
- width: 92% !important;
+ width: 100% !important;
 }
 
 .specialize-wrapper p {
@@ -403,9 +593,13 @@ display: none !important;
   flex-direction: column !important;
 }
 
+.development-text p {
+  width: 110% !important;
+}
+
 .development-text h1 {
   font-weight: 600 !important;
-  width: 76% !important;
+  width: 85% !important;
 }
 
 .development-wrapper img {
@@ -432,7 +626,11 @@ display: none !important;
 }
 
 .domain-card > .flex p{
-  font-size: 21px;
+  font-size: 17px;
+}
+
+.domain-text h1 {
+  width: 75% !important;
 }
 
 /********** DecisionComponent **********/
@@ -474,16 +672,24 @@ display: none !important;
     padding-top: 1rem !important;
 }
 
+.contact-widget {
+  width: 290.98px !important;
+}
+
+.contact-input input{
+  width: 262px !important;
+}
+.contact-input textarea{
+  width: 262px !important;
+}
+
 .contact-text {
   width: 75% !important;
 }
 
-.contact-input input {
-  width: 316px !important;
-}
 
 .checkbox {
-  width: 19px !important ;
+  width: fit-content !important ;
 }
 
 /********** FooterComponent **********/
@@ -511,6 +717,8 @@ display: none !important;
   border-top: none !important;
   gap: 0 !important;
   flex-direction: column !important;
+  margin-left: 5rem !important;
+  margin-right: 5rem !important;
 }
 
 .footer-end > .flex {
@@ -530,6 +738,174 @@ display: none !important;
   display: flex !important;
 }
 
+/*********** ClientComponent **********/
+.client-card-container {
+  flex-direction: column !important;
+  align-items: center !important;
+  gap: 20px !important;
+}
+
+.client-h {
+  margin-bottom: 2rem !important;
+  margin-top: 2rem !important;
+  padding:  2rem !important;
+  text-align: center !important;
+}
+
+.client-card {
+  width: 300px !important;
+  height: 250px !important;
+}
+
+/********** Service Component **********/
+
+.development-service p {
+  width: 74% !important;
+  top: 7% !important;
+}
+
+.development-service h1 {
+  width: 100% !important;
+  top: 3% !important;
+  font-size: 20px !important;
+}
+
+.serviceCard-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  top: 18% !important;
+}
+
+.lifecycle-wrapper p {
+  width: 70% !important;
+}
+
+.lifecycle-wrapper h1 {
+  width: 92% !important;
+  font-size: 20px !important;
+}
+
+.lifecycle-widget img {
+  width: 100% !important;
+}
+
+.lifecycle-widget {
+  padding-right: 2rem !important;
+  padding-left: 2rem !important;
+}
+
+.service-card {
+  width: 250px !important;
+  height: 200px !important;
+}
+
+.serviceCard-wrapper {
+  padding: 0 !important;
+}
+
+.card-text {
+  padding: 1rem !important;
+}
+
+.card-text h1{
+  width: 100% !important;
+  font-size: 17px !important;
+}
+
+.card-text p {
+  width: 100% !important;
+}
+
+.bg-small {
+  height: fit-content !important;
+}
+
+/********** Analytics component **********/
+
+.platform-wrapper {
+  height: 419px !important;
+  align-items: start !important;
+  position: relative !important;
+  padding-bottom: 2rem !important;
+  padding-top: 2rem !important;
+  padding-left: 0 !important;
+}
+
+.platform-widget {
+  position: absolute !important;
+  bottom: 25px !important;
+}
+
+.platform-widget2 {
+  position: absolute !important;
+  bottom: 13px !important;
+  right: 0 !important;
+}
+
+.platform-wrapper p {
+  margin-top: 32px !important;
+  width: 100%;
+  font-size: 15px;
+}
+
+.platform-wrapper h1 {
+  font-size: 16px !important;
+  width: 95%;
+}
+
+.ellipse {
+  width: 88% !important;
+  top: 40px !important;
+}
+
+.analy-wrapper {
+  flex-direction: column !important;
+    align-items: center !important;
+}
+
+.analytics-wrapper h1 {
+  font-size: 17px !important;
+}
+
+.analytics-container {
+  padding-left: 2rem !important;
+  padding-right: 2rem !important;
+}
+
+.analy-wrapper {
+  gap: 1rem !important;
+}
+
+.analy-content {
+  align-items: center !important;
+  text-align: center !important;
+  width: 100% !important;
+  margin-top: 68px !important;
+}
+
+.analytic-widget {
+  margin-bottom: 20px !important;
+}
+
+/********** CompanyComponent *********/
+.comp-text {
+  top: 9% !important;
+}
+
+.comp-text h1 {
+  padding:  1rem !important;
+}
+
+.comp-text p {
+  width: 81% !important;
+}
+
+/********** Dropdown component **********/
+.serv-dropdown {
+  list-style: none;
+
+}
   
 }
 
@@ -737,9 +1113,7 @@ display: none !important;
   width: 75% !important;
 }
 
-.contact-input input {
-  width: 316px !important;
-}
+
 
 .checkbox {
   width: 19px !important ;
@@ -788,5 +1162,120 @@ display: none !important;
 .bg-small  {
   display: flex !important;
 }
+
+/********** Service Component **********/
+
+.development-service p {
+  width: 74% !important;
+  top: 7% !important;
+}
+
+.development-service h1 {
+  width: 75% !important;
+  top: 3% !important;
+}
+
+.serviceCard-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  top: 15% !important;
+}
+
+.lifecycle-wrapper p {
+  width: 70% !important;
+}
+
+.card-text h1{
+  width: 100% !important;
+  font-size: 17px !important;
+}
+
+.card-text p {
+  width: 100% !important;
+}
+
+.lifecycle-wrapper h1 {
+  width: 92% !important;
+}
+
+.lifecycle-widget img {
+  width: 100% !important;
+}
+
+.lifecycle-widget {
+  padding-right: 2rem !important;
+  padding-left: 2rem !important;
+}
+
+/********** Analytics component **********/
+
+.platform-wrapper {
+  height: 701px !important;
+  align-items: start !important;
+  position: relative !important;
+}
+
+.platform-widget {
+  position: absolute !important;
+  bottom: 110px !important;
+}
+
+.platform-widget2 {
+  position: absolute !important;
+  bottom: 90px !important;
+  right: 0 !important;
+}
+
+.platform-wrapper p {
+  margin-top: 32px !important;
+  width: 72%;
+  font-size: 15px;
+}
+
+.platform-wrapper h1 {
+  font-size: 25px !important;
+  width: 95%;
+}
+
+.ellipse {
+  width: 222% !important;
+    top: -134px !important;
+}
+
+.analy-wrapper {
+  flex-direction: column !important;
+    align-items: center !important;
+}
+
+.analy-content {
+  align-items: center !important;
+  text-align: center !important;
+  width: 100% !important;
+  margin-top: 68px !important;
+}
+
+.analytic-widget {
+  margin-bottom: 100px !important;
+}
+
+/*********** ClientComponent **********/
+.client-card-container {
+  flex-direction: column;
+}
+
+/********** CompanyComponent *********/
+.comp-text {
+  top: 21% !important;
+}
+
+.comp-text h1 {
+  padding:  1rem !important;
+}
+
+.comp-text p {
+  width: 81% !important;
+}
+
 
 }

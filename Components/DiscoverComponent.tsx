@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import Image from 'next/image'
-import dropdown from '../assets/vector (29).png'
+import dropdown from '../assets/ion_caret-back.svg'
 import skill1 from '../assets/Group 104.svg'
 import skill2 from '../assets/Group 105.svg'
 import skill3 from '../assets/Group 60.svg'

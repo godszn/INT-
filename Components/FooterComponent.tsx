@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import '../src/app/globals.css'
-import cap from '../assets/cap.png'
+import cap from '../assets/Vector3.svg'
 import line from '../assets/Line 13.png'
 
 const FooterComponent = () => {

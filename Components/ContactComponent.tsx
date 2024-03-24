@@ -1,14 +1,14 @@
 import React from 'react'
 import '../src/app/globals.css'
 import Image from 'next/image'
-import attach from '../assets/attach.png'
+import attach from '../assets/Vector.svg'
 
 const ContactComponent = () => {
     return (
         <div className='w-full'>
             <div className="contact-wrapper" style={{ backgroundColor: '#2D7EFF' }}>
                 <section className="contact-container flex" style={{ padding: '6rem', justifyContent: 'center', width: '100%', gap: '6rem' }}>
-                    <section className="contact-widget p-4" style={{ width: '347.98px', backgroundColor: 'white', borderRadius: '.5rem', padding: '.5rem' }}>
+                    <section className="contact-widget p-4" style={{ width: '347.98px', backgroundColor: 'white', borderRadius: '1rem', padding: '.5rem' }}>
                         <h1 style={{ textAlign: 'center', marginTop: '1rem', fontSize: '20px', fontWeight: '500', letterSpacing: '1px' }}>
                             CONTACT US
                         </h1>
@@ -28,7 +28,7 @@ const ContactComponent = () => {
                             </div>
                             <div className='p-4' style={{ paddingTop: '0' }}>
                                 <section className='flex'>
-                                    <input type="checkbox" style={{ width: '19px !important' }} />
+                                    <input className = 'checkbox' type="checkbox" style={{ width: '19px !important' }} />
                                     <label style={{ fontSize: 'small', marginLeft: '.5rem', color: '#3333338F' }}>
                                         Request NDA
                                     </label>

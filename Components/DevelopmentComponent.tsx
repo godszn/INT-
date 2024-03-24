@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import dev from '../assets/vector (18).png'
+import dev from '../assets/Frame 72.svg'
 
 const DevelopmentComponent = () => {
     return (

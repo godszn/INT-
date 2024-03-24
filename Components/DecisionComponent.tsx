@@ -1,5 +1,5 @@
 import React from 'react'
-import tick from '../assets/vector (2).png'
+import tick from '../assets/ri_checkbox-circle-line.svg'
 import Image from 'next/image'
 import '../src/app/globals.css'
 
@@ -34,7 +34,7 @@ const DecisionComponent = () => {
                             Reduced time-to-market
                         </p>
                     </div>
-                    <div className="decision-content fe flex" style={{ gap: '2.2rem', alignItems: 'center', justifyContent: 'flex-end' }}>
+                    <div className="decision-content fe flex" style={{ gap: '1.5rem', alignItems: 'center', justifyContent: 'flex-end' }}>
                         <Image style={{ width: '5%', height: 'fit-content' }} src={tick} alt='' />
                         <p style={{ fontWeight: '500' }}>
                             Efficiency and productivity boost

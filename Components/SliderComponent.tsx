@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import Link from 'next/link';
 import Image from 'next/image';
 import logo from '../assets/int+.svg'
 import logo2 from '../assets/int++.svg'
@@ -33,65 +34,51 @@ import 'swiper/css/autoplay';
 import 'swiper/css/pagination';
 
 interface MenuDropdown {
-  menuClick : () => void
+  menuClick: () => void
 }
 
-const imageSlider:React.FC<MenuDropdown> = ({menuClick}) => {
-  const [display, setDisplay] = useState(true)
-  const [display1, setDisplay1] = useState(false)
-  const [active, setActive] = useState<number | null>(null)
+const imageSlider: React.FC<MenuDropdown> = ({ menuClick }) => {
+  const [ishover, setHover] = useState(false);
+  const [ishover1, setHover1] = useState(false);
+  const [ishover2, setHover2] = useState(false);
+  const [ishover3, setHover3] = useState(false);
 
-  useEffect(() => {
-    if (active !== null) {
-      bgColor(true);  
-    } else {
-      bgColor(false); 
-    }
-  }, [active]);
-
-  const handleActive = (index: number) => {
-    setActive((prevIndex) => (prevIndex === index ? null : index))
-    bgColor(true);
+  const handleHover = () => {
+    setHover(true);
+  }
+  const handleLeave = () => {
+    setHover(false)
+  }
+  const handleHover1 = () => {
+    setHover1(true);
+  }
+  const handleLeave1 = () => {
+    setHover1(false)
+  }
+  const handleHover2 = () => {
+    setHover2(true);
+  }
+  const handleLeave2 = () => {
+    setHover2(false)
+  }
+  const handleHover3 = () => {
+    setHover3(true);
+  }
+  const handleLeave3 = () => {
+    setHover3(false)
   }
 
-  const activeStyle = (index: number) => {
-    const isActive = index === active
-
-    return {
-      color: isActive ? '#2D7EFF' : (active !== null ? 'black' : 'white'),
-    };
-    
-  }
-
-   const renderImage = () => {
-    if (active !== null) {
-      return <Image  className='h-fit' style={{ height: '22px' }} src={logo2} alt="" />;
-    } else {
-      return <Image className='h-fit' style={{ height: '22px' }} src={logo} alt="" />;
-    }
-  }
-
-  const bgColor = (isActive: boolean) => {
-   const nav = document.getElementById('nav');
-   const color = document.getElementById('color');
-   if (nav) {
-    nav.style.backgroundColor = isActive ? 'white' : 'transparent';
-   }
- 
-
-   
-  }
-
-  const dropDown = () => {
-    setDisplay((!display))
-    setDisplay1((!display1))
+  const renderImage = () => {
+    return <Image className='h-fit' style={{ height: '22px', width: '100%' }} src={ishover || ishover1 || ishover2 || ishover3 ? logo2 : logo} alt="" />;
   }
 
   return (
     <div className='flex flex-col items-center justify-between relative'>
-      <nav id='nav' className='navbar-wrapper justify-between w-full flex  absolute top-0 px-24 pt-9 pb-4 '>
+      <nav id='nav' className='navbar-wrapper justify-between w-full flex  absolute top-0 px-24 pt-9 pb-4 ' style={{ backgroundColor: ishover || ishover1 || ishover2 || ishover3 ? 'white' : 'transparent' }}>
         <section className="navbrand flex">
-          {renderImage()}
+          <Link href='/'>
+            {renderImage()}
+          </Link>
         </section>
         <section className=" mlogo flex">
           <Image className='h-fit' src={logo1} alt='' />
@@ -101,18 +88,27 @@ const imageSlider:React.FC<MenuDropdown> = ({menuClick}) => {
             <Image className='h-fit nav-dropdown' style={{ display: 'none' }} src={dropdown} alt='' />
           </div>
           <div className='nav-list flex items-center'>
-            <ul className='flex list text-sm ' style={{ color:'white' }}>
-              {['SERVICES', 'INDUSTRIES', 'CLIENT', 'COMPANY'].map((links, index) => (
-                <li style={activeStyle(index)} key={index} onClick={
-                  () => {
-                    dropDown();
-                    handleActive(index);
-                  }
-                }
-                >
-                  {links}
+            <ul className='flex list text-sm ' style={{ color: ishover || ishover1 || ishover2 || ishover3 ? 'black' : 'white' }}>
+              <Link href='/Service'>
+                <li onMouseEnter={handleHover} onMouseLeave={handleLeave} >
+                  SERVICES
                 </li>
-              ))}
+              </Link>
+              <Link href='/industries'>
+                <li onMouseEnter={handleHover1} onMouseLeave={handleLeave1}>
+                  INDUSTRIES
+                </li>
+              </Link>
+              <Link href='/client'>
+                <li onMouseEnter={handleHover2} onMouseLeave={handleLeave2}>
+                  CLIENT
+                </li>
+              </Link>
+              <Link href='/company'>
+                <li onMouseEnter={handleHover3} onMouseLeave={handleLeave3}>
+                  COMPANY
+                </li>
+              </Link>
             </ul>
           </div>
           <button className="navbtn text-sm items-center flex">
@@ -120,7 +116,7 @@ const imageSlider:React.FC<MenuDropdown> = ({menuClick}) => {
           </button>
         </section>
       </nav>
-      {active === 0 && (
+      {ishover && (
         <main className='absolute dropDetails' style={{ backgroundColor: 'white', paddingTop: '67px', paddingBottom: '4rem' }}>
           <div className='flex' style={{ paddingLeft: '100px' }}>
             <section className='flex' style={{ gap: '41px', paddingRight: '38px', borderRight: '1px solid #0000000F' }}>
@@ -160,7 +156,7 @@ const imageSlider:React.FC<MenuDropdown> = ({menuClick}) => {
             </section>
             <div className='side-mav'>
               <ul style={{ fontWeight: '600', lineHeight: '2.3', width: '200px' }}>
-              <li>IT Consulting</li>
+                <li>IT Consulting</li>
                 <li>Digital Transformation</li>
                 <li>Ui/Ux Design</li>
                 <li>QA & Testing</li>
@@ -168,12 +164,11 @@ const imageSlider:React.FC<MenuDropdown> = ({menuClick}) => {
               </ul>
             </div>
           </div>
-        </main>
-      )}
-      {active === 1 && (
+        </main>)}
+      {ishover1 && (
         <main className='absolute dropDetails' style={{ backgroundColor: 'white', paddingTop: '67px', paddingBottom: '4rem' }}>
           <div className='flex' style={{ paddingLeft: '188px' }}>
-            <section style={{ position: 'relative' , borderRight: '1px solid #0000000F', paddingRight: '68px'}}>
+            <section style={{ position: 'relative', borderRight: '1px solid #0000000F', paddingRight: '68px' }}>
               <Image src={servicepic} style={{ backgroundPosition: 'center', backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }} alt='' />
               <h1 className='backgroundDrop' style={{ position: 'absolute', top: '40%' }}>
                 Get the edge you need: Industry-focused solutions built with the latest tech by Intellectsoft.
@@ -181,7 +176,7 @@ const imageSlider:React.FC<MenuDropdown> = ({menuClick}) => {
             </section>
             <div className='side-mav'>
               <ul style={{ fontWeight: '600', lineHeight: '2.3', width: '200px' }}>
-                <h1 style={{color: '#998E8E', fontWeight:'600'}}>Industries</h1>
+                <h1 style={{ color: '#998E8E', fontWeight: '600' }}>Industries</h1>
                 <li>Fintech</li>
                 <li>Travel & Hospitality</li>
                 <li>eCommerce & Retails</li>
@@ -192,38 +187,38 @@ const imageSlider:React.FC<MenuDropdown> = ({menuClick}) => {
           </div>
         </main>
       )}
-      {active === 2 && (
+      {ishover2 && (
         <main className='absolute dropDetails' style={{ backgroundColor: 'white', paddingTop: '67px', paddingBottom: '4rem' }}>
           <div className='flex' style={{ paddingLeft: '188px' }}>
-            <section style={{ position: 'relative' , borderRight: '1px solid #0000000F', paddingRight: '68px'}}>
+            <section style={{ position: 'relative', borderRight: '1px solid #0000000F', paddingRight: '68px' }}>
               <Image src={clientpic} style={{ backgroundPosition: 'center', backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }} alt='' />
               <h1 className='backgroundDrop' style={{ position: 'absolute', top: '40%' }}>
-              Forward-thinking companies choose us for reliable partnership and innovation.
+                Forward-thinking companies choose us for reliable partnership and innovation.
               </h1>
             </section>
             <div className='side-mav'>
               <ul style={{ fontWeight: '600', lineHeight: '2.3', width: '200px' }}>
-                <h1 style={{color: '#998E8E', fontWeight:'600'}}>Clients</h1>
-                <li style={{color: '#2D7EFF'}}>Our Clients</li>
+                <h1 style={{ color: '#998E8E', fontWeight: '600' }}>Clients</h1>
+                <li style={{ color: '#2D7EFF' }}>Our Clients</li>
                 <li>Case Studies</li>
               </ul>
             </div>
           </div>
         </main>
       )}
-      {active === 3 && (
+      {ishover3 && (
         <main className='absolute dropDetails' style={{ backgroundColor: 'white', paddingTop: '67px', paddingBottom: '4rem' }}>
           <div className='flex' style={{ paddingLeft: '188px' }}>
-            <section style={{ position: 'relative' , borderRight: '1px solid #0000000F', paddingRight: '68px'}}>
+            <section style={{ position: 'relative', borderRight: '1px solid #0000000F', paddingRight: '68px' }}>
               <Image src={companypic} style={{ backgroundPosition: 'center', backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }} alt='' />
               <h1 className='backgroundDrop' style={{ position: 'absolute', top: '40%', width: '70%' }}>
-              Breakthrough barriers, achieve agility: We help enterprises rethink their core and transform digitally, efficiently.
+                Breakthrough barriers, achieve agility: We help enterprises rethink their core and transform digitally, efficiently.
               </h1>
             </section>
             <div className='side-mav'>
               <ul style={{ fontWeight: '600', lineHeight: '2.3', width: '200px' }}>
-                <h1 style={{color: '#998E8E', fontWeight:'600'}}>Company</h1>
-                <li style={{color: '#2D7EFF'}}>About</li>
+                <h1 style={{ color: '#998E8E', fontWeight: '600' }}>Company</h1>
+                <li style={{ color: '#2D7EFF' }}>About</li>
                 <li>Team</li>
                 <li>Careers</li>
                 <li>Social Responsibility</li>
